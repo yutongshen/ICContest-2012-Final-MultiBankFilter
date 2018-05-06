@@ -1,0 +1,4 @@
+set_mpc_macro_options -x_offset 0.000 -y_offset 0.000 -anchor_bound bl rom1 
+set_mpc_macro_options -x_offset 0.000 -y_offset 0.000 -anchor_bound bl rom0 
+set_mpc_macro_options -side_channel {0.000 0.000 0.000 0.000} rom1 
+set_mpc_macro_options -side_channel {0.000 0.000 0.000 0.000} rom0 

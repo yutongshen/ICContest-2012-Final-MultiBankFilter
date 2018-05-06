@@ -1,0 +1,69 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: D-2010.03-SP5
+Date   : Tue May  1 16:50:46 2018
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: rom0 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG175_S13
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MBF                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  rom0/CLK (rom_1024x4_t13)                0.00       0.50 r
+  rom0/Q[3] (rom_1024x4_t13)               2.15       2.65 f
+  U752/Y (INVX16)                          0.08       2.74 r
+  U973/Y (NOR2X8)                          0.07       2.81 f
+  U703/Y (BUFX20)                          0.16       2.97 f
+  U978/Y (BUFX20)                          0.12       3.09 f
+  U830/Y (NAND2X8)                         0.10       3.19 r
+  U1007/Y (XOR2X4)                         0.14       3.33 r
+  U708/Y (NAND2X6)                         0.09       3.42 f
+  U1000/Y (XOR2X4)                         0.14       3.56 f
+  U712/Y (INVX12)                          0.09       3.65 r
+  U1122/Y (INVX20)                         0.07       3.72 f
+  sub_105/B[7] (MBF_DW01_sub_25)           0.00       3.72 f
+  sub_105/U136/Y (INVX2)                   0.16       3.88 r
+  sub_105/U156/Y (NAND2X2)                 0.19       4.07 f
+  sub_105/U181/Y (OA21X4)                  0.21       4.28 f
+  sub_105/U176/Y (OAI21X4)                 0.15       4.43 r
+  sub_105/U173/Y (NAND3X6)                 0.12       4.55 f
+  sub_105/U182/Y (NAND3X8)                 0.11       4.66 r
+  sub_105/U187/Y (AOI21X4)                 0.15       4.81 f
+  sub_105/U145/Y (OR2X4)                   0.20       5.02 f
+  sub_105/U142/Y (NAND2X4)                 0.08       5.09 r
+  sub_105/U149/Y (XOR2X4)                  0.12       5.22 r
+  sub_105/DIFF[14] (MBF_DW01_sub_25)       0.00       5.22 r
+  clk_r_REG175_S13/D (DFFTRX2)             0.00       5.22 r
+  data arrival time                                   5.22
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  clock uncertainty                       -0.10       5.40
+  clk_r_REG175_S13/CK (DFFTRX2)            0.00       5.40 r
+  library setup time                      -0.18       5.22
+  data required time                                  5.22
+  -----------------------------------------------------------
+  data required time                                  5.22
+  data arrival time                                  -5.22
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

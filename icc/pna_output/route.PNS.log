@@ -1,0 +1,20 @@
+
+Name of design : route
+Number of cell instance masters in the library : 182
+Number of cell instances in the design : 6509
+Processing net VDD ...
+Average power dissipation in route :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in route :   666.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 123
+Maximum IR drop in route : 38.79 mV
+Maximum current in route : 31.502 mA
+Processing net VSS ...
+Average power dissipation in route :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in route :   666.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 124
+Maximum IR drop in route : 39.75 mV
+Maximum current in route : 41.470 mA
+Memory usage for design data :      40960.000 Kbytes
+Overall takes     1.07 seconds

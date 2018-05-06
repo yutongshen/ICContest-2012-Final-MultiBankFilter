@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : qor
+Design : MBF
+Version: D-2010.03-SP5
+Date   : Tue May  1 16:50:46 2018
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              20.00
+  Critical Path Length:          4.72
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      5.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         23
+  Hierarchical Port Count:       1186
+  Leaf Cell Count:               3566
+  Buf/Inv Cell Count:             612
+  CT Buf/Inv Cell Count:            1
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    29336.164036
+  Noncombinational Area: 61662.589266
+  Net Area:             369135.215393
+  -----------------------------------
+  Cell Area:             90998.753302
+  Design Area:          460133.968695
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          3664
+  Nets With Violations:             0
+  -----------------------------------
+
+
+  Hostname: ideal125
+
+  Compile CPU Statistics
+  -----------------------------------
+  Resource Sharing:              0.44
+  Logic Optimization:            6.10
+  Mapping Optimization:         19.48
+  -----------------------------------
+  Overall Compile Time:         28.92
+
+1

@@ -1,0 +1,1473 @@
+Initializing gui preferences from file  /home/yutongshen/.synopsys_icc_prefs.tcl
+icc_shell> gui_start
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+icc_shell> open_mw_lib /home/yutongshen/IC_contest/ICContest100_final/icc/CHIP
+{CHIP}
+icc_shell> ::iccGUI::open_mw_cel  route
+icc_shell> open_mw_cel route
+Preparing data for query................... 
+Warning: Unit conflict found: Milkyway technology file power unit is pW; main library power unit is mW. (IFS-007)
+Information: Opened "route.CEL;1" from "/home/yutongshen/IC_contest/ICContest100_final/icc/CHIP" library. (MWUI-068)
+{route}
+icc_shell> 
+icc_shell> report_timing
+Loading db file '/usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Loading db file '/home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13/rom_1024x4_t13_slow_syn.db'
+Loading db file '/home/nfs_cad/synopsys/icc/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/nfs_cad/synopsys/icc/cur/libraries/syn/gtech.db'
+Loading db file '/home/nfs_cad/synopsys/icc/cur/libraries/syn/standard.sldb'
+Information: linking reference library : /usr/cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13gfsg_fram. (PSYN-878)
+Information: linking reference library : /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13/rom_1024x4_t13. (PSYN-878)
+Information: Loading local_link_library attribute {slow.db, rom_1024x4_t13_slow_syn.db}. (MWDC-290)
+
+  Linking design 'MBF'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (24 designs)              route.CEL, etc
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  rom_1024x4_t13 (library)    /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13/rom_1024x4_t13_slow_syn.db
+  dw_foundation.sldb (library) /home/nfs_cad/synopsys/icc/cur/libraries/syn/dw_foundation.sldb
+
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Floorplan loading succeeded.
+
+Warning: The trip points for the library named rom_1024x4_t13 differ from those in the library named slow. (TIM-164)
+  Loading design 'MBF'
+
+
+
+
+Information: Library Manufacturing Grid(GridResolution) : 5
+Information: Time Unit from Milkyway design library: 'ns' 
+Information: Design Library and main library timing units are matched - 1.000 ns. 
+Information: Resistance Unit from Milkyway design library: 'kohm' 
+Information: Design Library and main library resistance units are matched - 1.000 kohm. 
+Information: Capacitance Unit from Milkyway design library: 'pf' 
+Information: Design Library and main library capacitance units are matched - 1.000 pf. 
+Warning: Inconsistent library data found for layer POLY1. (RCEX-018)
+
+TLU+ File = /usr/cad/lib/CBDK_IC_Contest_v2.1/Astro/tluplus/t013s8mg_fsg_typical.tluplus
+
+--------- Sanity Check on TLUPlus Files -------------
+1. Checking the conducting layer names in ITF and mapping file ... 
+[ Passed! ]
+2. Checking the via layer names in ITF and mapping file ... 
+[ Passed! ]
+3. Checking the consistency of Min Width and Min Spacing between MW-tech and ITF ... 
+[ Passed! ]
+----------------- Check Ends ------------------
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is detail route TLU+. (RCEX-015)
+Information: Start mixed mode parasitic extraction. (RCEX-023)
+Information: Start rc extraction...
+Warning: Net 'SNPS_LOGIC0' is not fully connected and will be estimated. (RCEX-060)
+Information: Parasitic source is LPE. (RCEX-040)
+Information: Parasitic mode is RealRC. (RCEX-041)
+Information: Using virtual shield extraction. (RCEX-081)
+Information: Extraction mode is MAX. (RCEX-042)
+Information: Extraction derate is 125/125/125. (RCEX-043)
+Information: Coupling capacitances are lumped to ground. (RCEX-044)
+Information: Start back annotation for parasitic extraction. (RCEX-023)
+Information: End back annotation for parasitic extraction. (RCEX-023)
+Information: Start timing update for parasitic extraction. (RCEX-023)
+Information: End timing update for parasitic extraction. (RCEX-023)
+Information: End parasitic extraction. (RCEX-023)
+Information: Start rc update...
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer METAL1 : 0.00022 0.00022 (RCEX-011)
+Information: Library Derived Res for layer METAL1 : 0.00065 0.00065 (RCEX-011)
+Information: Library Derived Cap for layer METAL2 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL2 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL3 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL3 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL4 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL4 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL5 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL5 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL6 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL6 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL7 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL7 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL8 : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Res for layer METAL8 : 6.7e-05 6.7e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00044 0.00044 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00028 0.00028 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.00078 0.00078 (RCEX-011)
+Information: End rc update.
+Information: Updating graph... (UID-83)
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Tue May  1 22:45:45 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.58%
+
+  Startpoint: rom1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG30_S15
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.28       0.28
+  rom1/CLK (rom_1024x4_t13)                0.00       0.28 r
+  rom1/Q[3] (rom_1024x4_t13)               2.29       2.57 f
+  U1021/Y (NAND2X6)                        0.23 @     2.80 r
+  U36/Y (CLKBUFX3)                         0.50 @     3.30 r
+  U37/Y (CLKINVX1)                         0.55 &     3.85 f
+  add_134/IN0 (MBF_DW01_add_24)            0.00       3.85 f
+  add_134/U157/Y (NOR2XL)                  0.46 &     4.30 r
+  add_134/U183/Y (OAI21XL)                 0.20 &     4.51 f
+  add_134/U184/Y (OAI2BB1XL)               0.27 &     4.78 f
+  add_134/U168/Y (INVXL)                   0.15 &     4.93 r
+  add_134/U155/Y (OAI21XL)                 0.11 &     5.03 f
+  add_134/U187/Y (AO21X1)                  0.27 &     5.31 f
+  add_134/U195/Y (XNOR2X1)                 0.11 &     5.42 r
+  add_134/SUM[15] (MBF_DW01_add_24)        0.00       5.42 r
+  clk_r_REG30_S15/D (DFFTRX1)              0.00 &     5.42 r
+  data arrival time                                   5.42
+
+  clock clk (rise edge)                    5.25       5.25
+  clock network delay (propagated)         0.27       5.52
+  clock uncertainty                       -0.10       5.42
+  clk_r_REG30_S15/CK (DFFTRX1)             0.00       5.42 r
+  library setup time                      -0.21       5.21
+  data required time                                  5.21
+  -----------------------------------------------------------
+  data required time                                  5.21
+  data arrival time                                  -5.42
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.21
+
+
+1
+icc_shell> read_sdc  -version Latest "./MBF_APR.sdc"
+ Info: hierarchy_separator was changed to /
+
+Reading SDC version 2.0...
+Error: unknown command 'remove_from_collection' (CMD-005)
+Using operating conditions 'slow' found in library 'slow'.
+ Info: hierarchy_separator was changed to /
+1
+icc_shell> report_timing
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Tue May  1 22:47:54 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.58%
+
+  Startpoint: rom1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG30_S15
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.28       0.28
+  rom1/CLK (rom_1024x4_t13)                0.00       0.28 r
+  rom1/Q[3] (rom_1024x4_t13)               2.29       2.57 f
+  U1021/Y (NAND2X6)                        0.23 @     2.80 r
+  U36/Y (CLKBUFX3)                         0.50 @     3.30 r
+  U37/Y (CLKINVX1)                         0.55 &     3.85 f
+  add_134/IN0 (MBF_DW01_add_24)            0.00       3.85 f
+  add_134/U157/Y (NOR2XL)                  0.46 &     4.30 r
+  add_134/U183/Y (OAI21XL)                 0.20 &     4.51 f
+  add_134/U184/Y (OAI2BB1XL)               0.27 &     4.78 f
+  add_134/U168/Y (INVXL)                   0.15 &     4.93 r
+  add_134/U155/Y (OAI21XL)                 0.11 &     5.03 f
+  add_134/U187/Y (AO21X1)                  0.27 &     5.31 f
+  add_134/U195/Y (XNOR2X1)                 0.11 &     5.42 r
+  add_134/SUM[15] (MBF_DW01_add_24)        0.00       5.42 r
+  clk_r_REG30_S15/D (DFFTRX1)              0.00 &     5.42 r
+  data arrival time                                   5.42
+
+  clock clk (rise edge)                    5.50       5.50
+  clock network delay (propagated)         0.27       5.77
+  clock uncertainty                       -0.10       5.67
+  clk_r_REG30_S15/CK (DFFTRX1)             0.00       5.67 r
+  library setup time                      -0.21       5.46
+  data required time                                  5.46
+  -----------------------------------------------------------
+  data required time                                  5.46
+  data arrival time                                  -5.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1
+icc_shell> report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Tue May  1 22:47:58 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.58%
+
+  Startpoint: rom1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG30_S15
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.28       0.28
+  rom1/CLK (rom_1024x4_t13)                0.00       0.28 r
+  rom1/Q[3] (rom_1024x4_t13)               2.29       2.57 f
+  U1021/Y (NAND2X6)                        0.23 @     2.80 r
+  U36/Y (CLKBUFX3)                         0.50 @     3.30 r
+  U37/Y (CLKINVX1)                         0.55 &     3.85 f
+  add_134/IN0 (MBF_DW01_add_24)            0.00       3.85 f
+  add_134/U157/Y (NOR2XL)                  0.46 &     4.30 r
+  add_134/U183/Y (OAI21XL)                 0.20 &     4.51 f
+  add_134/U184/Y (OAI2BB1XL)               0.27 &     4.78 f
+  add_134/U168/Y (INVXL)                   0.15 &     4.93 r
+  add_134/U155/Y (OAI21XL)                 0.11 &     5.03 f
+  add_134/U187/Y (AO21X1)                  0.27 &     5.31 f
+  add_134/U195/Y (XNOR2X1)                 0.11 &     5.42 r
+  add_134/SUM[15] (MBF_DW01_add_24)        0.00       5.42 r
+  clk_r_REG30_S15/D (DFFTRX1)              0.00 &     5.42 r
+  data arrival time                                   5.42
+
+  clock clk (rise edge)                    5.50       5.50
+  clock network delay (propagated)         0.27       5.77
+  clock uncertainty                       -0.10       5.67
+  clk_r_REG30_S15/CK (DFFTRX1)             0.00       5.67 r
+  library setup time                      -0.21       5.46
+  data required time                                  5.46
+  -----------------------------------------------------------
+  data required time                                  5.46
+  data arrival time                                  -5.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1
+icc_shell> report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Tue May  1 22:48:06 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.58%
+
+  Startpoint: rom1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG30_S15
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.28       0.28
+  rom1/CLK (rom_1024x4_t13)                0.00       0.28 r
+  rom1/Q[3] (rom_1024x4_t13)               2.29       2.57 f
+  U1021/Y (NAND2X6)                        0.23 @     2.80 r
+  U36/Y (CLKBUFX3)                         0.50 @     3.30 r
+  U37/Y (CLKINVX1)                         0.55 &     3.85 f
+  add_134/IN0 (MBF_DW01_add_24)            0.00       3.85 f
+  add_134/U157/Y (NOR2XL)                  0.46 &     4.30 r
+  add_134/U183/Y (OAI21XL)                 0.20 &     4.51 f
+  add_134/U184/Y (OAI2BB1XL)               0.27 &     4.78 f
+  add_134/U168/Y (INVXL)                   0.15 &     4.93 r
+  add_134/U155/Y (OAI21XL)                 0.11 &     5.03 f
+  add_134/U187/Y (AO21X1)                  0.27 &     5.31 f
+  add_134/U195/Y (XNOR2X1)                 0.11 &     5.42 r
+  add_134/SUM[15] (MBF_DW01_add_24)        0.00       5.42 r
+  clk_r_REG30_S15/D (DFFTRX1)              0.00 &     5.42 r
+  data arrival time                                   5.42
+
+  clock clk (rise edge)                    5.50       5.50
+  clock network delay (propagated)         0.27       5.77
+  clock uncertainty                       -0.10       5.67
+  clk_r_REG30_S15/CK (DFFTRX1)             0.00       5.67 r
+  library setup time                      -0.21       5.46
+  data required time                                  5.46
+  -----------------------------------------------------------
+  data required time                                  5.46
+  data arrival time                                  -5.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1
+icc_shell> write_verilog -wire_declaration -keep_backslash_before_hiersep -no_physical_only_cells MBF_pr.v
+Generating description for top level cell.
+Processing module MBF_DW01_sub_23
+Processing module MBF_DW01_add_19
+Processing module MBF_DW01_add_17
+Processing module MBF_DW01_add_18
+Processing module MBF_DW01_sub_17
+Processing module MBF_DW01_sub_16
+Processing module MBF_DW01_inc_0
+Processing module MBF_DW01_add_27
+Processing module MBF_DW01_sub_24
+Processing module MBF_DW01_sub_25
+Processing module MBF_DW01_sub_26
+Processing module MBF_DW01_add_26
+Processing module MBF_DW01_add_25
+Processing module MBF_DW01_add_24
+Processing module MBF_DW01_add_23
+Processing module MBF_DW01_sub_30
+Processing module MBF_DW01_sub_28
+Processing module MBF_DW01_sub_27
+Processing module MBF_DW01_sub_29
+Processing module MBF_DW01_add_22
+Processing module MBF_DW01_add_21
+Processing module MBF_DW01_add_20
+Processing module MBF_DW01_sub_19
+Processing module MBF
+Elapsed =    0:00:00, CPU =    0:00:00
+Write verilog completed successfully.
+1
+icc_shell> write_sdf -version 2.1 MBF_pr.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/yutongshen/IC_contest/ICContest100_final/icc/MBF_pr.sdf'. (WT-3)
+icc_shell> write_stream -format gds -lib_name /home/yutongshen/IC_contest/ICContest100_final/icc/CHIP -cells {route } MBF.gds
+Warning: No Fill/Notch/Gap cell would be output! (MWSTRM-082)
+No layer map file is used during stream out!
+Skip layer map file
+Outputting Cell route.CEL
+Warning: Please close or open the cell (route) in read-only mode. (MWSTRM-023)
+====> TOTAL CELLS OUTPUT: 1 <====
+Outputting Contact $$via1
+Outputting Contact $$via7
+Outputting Contact $$via6_480_480_4_2
+Outputting Contact $$via6_480_480_2_4
+Outputting Contact $$via4_480_480_4_2
+Outputting Contact $$via4_480_480_2_4
+Outputting Contact $$via5_480_480_4_2
+Outputting Contact $$via5_480_480_2_4
+Outputting Contact $$via3_480_480_4_2
+Outputting Contact $$via7_900_900_1_2
+Outputting Contact $$via6_480_480_3_1
+Outputting Contact $$via6_480_480_2_1
+Outputting Contact $$via5_480_480_3_1
+Outputting Contact $$via4_480_480_3_1
+Outputting Contact $$via3_480_480_3_1
+Outputting Contact $$via2_480_480_4_1
+Outputting Contact $$via2_480_480_3_1
+Outputting Contact $$via7_900_900_2_2
+Outputting Contact $$via1_480_480_4_1
+Outputting Contact $$via1_480_480_3_1
+Outputting Contact $$via5_480_480_1_2
+Outputting Contact $$via4_480_480_2_1
+Outputting Contact $$via7_900_900_2_1
+Outputting Contact $$via6_480_480_1_2
+Outputting Contact $$via5_480_480_2_1
+Outputting Contact $$via4_480_480_1_2
+Outputting Contact $$via1_480_480_1_2
+Outputting Contact $$via1_480_480_2_1
+Outputting Contact $$via2_480_480_1_2
+Outputting Contact $$via3_480_480_2_1
+Outputting Contact $$via3_480_480_1_2
+Outputting Contact $$via2_480_480_2_1
+write_gds completed successfully!
+1
+icc_shell> ll
+Error: unknown command 'll' (CMD-005)
+icc_shell> verify_lvs -ignore_floating_port
+Create error cell route_lvs.err ...
+
+-- LVS START : --
+Total area error in layer 0 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 1 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 2 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 3 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 4 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 5 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 6 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 7 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 8 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 9 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 10 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 11 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 12 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 13 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 14 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+Total area error in layer 15 is 0.  Elapsed =    0:00:00, CPU =    0:00:00
+** Total Floating Nets are 0.
+** Total SHORT Nets are 0.
+** Total OPEN Nets are 0.
+** Total Electrical Equivalent Error are 0.
+** Total Must Joint Error are 0.
+
+-- LVS END : --
+Elapsed =    0:00:00, CPU =    0:00:00
+Update error cell ...
+1
+icc_shell> 
+Information: Opened "route_lvs.err;1" from "/home/yutongshen/IC_contest/ICContest100_final/icc/CHIP" library. (MWUI-068)
+icc_shell> verify_zrt_route
+Warning: Cell contains tie connections which are not connected to real PG. (MW-349)
+Turn off antenna since no rule is specified
+Cell Min-Routing-Layer = METAL1
+Cell Max-Routing-Layer = METAL8
+Warning: Ignore 2 top cell ports with no pins. (ZRT-027)
+Via on layer (VIA78) needs more than one tracks
+Warning: Layer METAL7 pitch 0.410 may be too small: wire/via-down 0.410, wire/via-up 0.500. (ZRT-026)
+Transition layer name: METAL7(6)
+
+
+Start checking for open nets ... 
+
+Total number of nets = 3507, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+
+Check 3507 nets, 0 have Errors
+
+[CHECK OPEN NETS] Elapsed real time: 0:00:00 
+[CHECK OPEN NETS] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[CHECK OPEN NETS] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[CHECK OPEN NETS] Total (MB): Used   22  Alloctr   23  Proc 1110 
+
+        There were 1755 out of 11241 pins with no spots.
+
+Printing options for 'set_route_zrt_common_options'
+-concurrent_redundant_via_effort_level                  :        high                
+-concurrent_redundant_via_mode                          :        insert_at_high_cost 
+-post_detail_route_redundant_via_insertion              :        high                
+
+Printing options for 'set_route_zrt_detail_options'
+
+
+Begin full DRC check ...
+
+Information: Using 1 threads for routing. (ZRT-444)
+Checked 1/9 Partitions, Violations =    0
+Checked 2/9 Partitions, Violations =    0
+Checked 3/9 Partitions, Violations =    0
+Checked 4/9 Partitions, Violations =    0
+Checked 5/9 Partitions, Violations =    0
+Checked 6/9 Partitions, Violations =    0
+Checked 7/9 Partitions, Violations =    0
+Checked 8/9 Partitions, Violations =    0
+Checked 9/9 Partitions, Violations =    0
+Removed 90 internal redundant via violations.
+[DRC CHECK] Elapsed real time: 0:00:01 
+[DRC CHECK] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[DRC CHECK] Stage (MB): Used    0  Alloctr    0  Proc   58 
+[DRC CHECK] Total (MB): Used   28  Alloctr   29  Proc 1171 
+Warning: No antenna rules defined, Skip antenna analysis. (ZRT-309)
+
+DRC-SUMMARY:
+        @@@@@@@ TOTAL VIOLATIONS =      0
+
+
+Total Wire Length =                    72422 micron
+Total Number of Contacts =             24241
+Total Number of Wires =                21153
+Total Number of PtConns =              143
+Total Number of Routed Wires =       21153
+Total Routed Wire Length =           72385 micron
+Total Number of Routed Contacts =       24241
+        Layer        METAL1 :       1643 micron
+        Layer        METAL2 :      20615 micron
+        Layer        METAL3 :      23707 micron
+        Layer        METAL4 :      21269 micron
+        Layer        METAL5 :       2597 micron
+        Layer        METAL6 :       1760 micron
+        Layer        METAL7 :        442 micron
+        Layer        METAL8 :        389 micron
+        Via        via7_2x1 :         22
+        Via        via6_1x2 :         18
+        Via        via5_2x1 :        100
+        Via        via5_1x2 :          8
+        Via        via4_1x2 :        342
+        Via   via4(rot)_1x2 :          8
+        Via        via4_2x1 :         31
+        Via        via3_1x2 :        377
+        Via   via3(rot)_2x1 :          5
+        Via   via3(rot)_1x2 :         17
+        Via        via3_2x1 :       2488
+        Via        via2_2x1 :       2920
+        Via   via2(rot)_1x2 :        258
+        Via   via2(rot)_2x1 :         12
+        Via        via2_1x2 :       6517
+        Via            via1 :       1617
+        Via       via1(rot) :         14
+        Via        via1_2x1 :       2676
+        Via   via1(rot)_1x2 :       1127
+        Via   via1(rot)_2x1 :        871
+        Via        via1_1x2 :       4813
+
+ 
+Redundant via conversion report:
+--------------------------------
+
+  Total optimized via conversion rate = 93.27% (22610 / 24241 vias)
+ 
+    Layer VIA12      = 85.33% (9487   / 11118   vias)
+        Weight 1     = 85.33% (9487    vias)
+        Un-optimized = 14.67% (1631    vias)
+    Layer VIA23      = 100.00% (9707   / 9707    vias)
+        Weight 1     = 100.00% (9707    vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA34      = 100.00% (2887   / 2887    vias)
+        Weight 1     = 100.00% (2887    vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA45      = 100.00% (381    / 381     vias)
+        Weight 1     = 100.00% (381     vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA56      = 100.00% (108    / 108     vias)
+        Weight 1     = 100.00% (108     vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA67      = 100.00% (18     / 18      vias)
+        Weight 1     = 100.00% (18      vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA78      = 100.00% (22     / 22      vias)
+        Weight 1     = 100.00% (22      vias)
+        Un-optimized =  0.00% (0       vias)
+ 
+  Total double via conversion rate    = 93.27% (22610 / 24241 vias)
+ 
+    Layer VIA12      = 85.33% (9487   / 11118   vias)
+    Layer VIA23      = 100.00% (9707   / 9707    vias)
+    Layer VIA34      = 100.00% (2887   / 2887    vias)
+    Layer VIA45      = 100.00% (381    / 381     vias)
+    Layer VIA56      = 100.00% (108    / 108     vias)
+    Layer VIA67      = 100.00% (18     / 18      vias)
+    Layer VIA78      = 100.00% (22     / 22      vias)
+ 
+  The optimized via conversion rate based on total routed via count = 93.27% (22610 / 24241 vias)
+ 
+    Layer VIA12      = 85.33% (9487   / 11118   vias)
+        Weight 1     = 85.33% (9487    vias)
+        Un-optimized = 14.67% (1631    vias)
+    Layer VIA23      = 100.00% (9707   / 9707    vias)
+        Weight 1     = 100.00% (9707    vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA34      = 100.00% (2887   / 2887    vias)
+        Weight 1     = 100.00% (2887    vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA45      = 100.00% (381    / 381     vias)
+        Weight 1     = 100.00% (381     vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA56      = 100.00% (108    / 108     vias)
+        Weight 1     = 100.00% (108     vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA67      = 100.00% (18     / 18      vias)
+        Weight 1     = 100.00% (18      vias)
+        Un-optimized =  0.00% (0       vias)
+    Layer VIA78      = 100.00% (22     / 22      vias)
+        Weight 1     = 100.00% (22      vias)
+        Un-optimized =  0.00% (0       vias)
+ 
+
+
+Verify Summary:
+
+Total number of nets = 3507, of which 0 are not extracted
+Total number of open nets = 0, of which 0 are frozen
+Total number of excluded ports = 0 ports of 0 unplaced cells connected to 0 nets
+                                 0 ports without pins of 0 cells connected to 0 nets
+                                 0 ports of 0 cover cells connected to 0 non-pg nets
+Total number of DRCs = 0
+Total number of antenna violations = no antenna rules defined
+Total number of voltage-area violations = no voltage-areas defined
+Total number of tie to rail violations = not checked
+Total number of tie to rail directly violations = not checked
+
+1
+icc_shell> get_attribute [get_die_area] bbox
+{0.000 0.000} {315.440 331.030}
+icc_shell> read_sdc  -version Latest "./MBF_APR.sdc"
+ Info: hierarchy_separator was changed to /
+
+Reading SDC version 2.0...
+Error: unknown command 'remove_from_collection' (CMD-005)
+Using operating conditions 'slow' found in library 'slow'.
+ Info: hierarchy_separator was changed to /
+1
+icc_shell> report_timing
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Tue May  1 23:14:15 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.58%
+
+  Startpoint: rom1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG30_S15
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.28       0.28
+  rom1/CLK (rom_1024x4_t13)                0.00       0.28 r
+  rom1/Q[3] (rom_1024x4_t13)               2.29       2.57 f
+  U1021/Y (NAND2X6)                        0.23 @     2.80 r
+  U36/Y (CLKBUFX3)                         0.50 @     3.30 r
+  U37/Y (CLKINVX1)                         0.55 &     3.85 f
+  add_134/IN0 (MBF_DW01_add_24)            0.00       3.85 f
+  add_134/U157/Y (NOR2XL)                  0.46 &     4.30 r
+  add_134/U183/Y (OAI21XL)                 0.20 &     4.51 f
+  add_134/U184/Y (OAI2BB1XL)               0.27 &     4.78 f
+  add_134/U168/Y (INVXL)                   0.15 &     4.93 r
+  add_134/U155/Y (OAI21XL)                 0.11 &     5.03 f
+  add_134/U187/Y (AO21X1)                  0.27 &     5.31 f
+  add_134/U195/Y (XNOR2X1)                 0.11 &     5.42 r
+  add_134/SUM[15] (MBF_DW01_add_24)        0.00       5.42 r
+  clk_r_REG30_S15/D (DFFTRX1)              0.00 &     5.42 r
+  data arrival time                                   5.42
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (propagated)         0.27       5.27
+  clock uncertainty                       -0.10       5.17
+  clk_r_REG30_S15/CK (DFFTRX1)             0.00       5.17 r
+  library setup time                      -0.21       4.96
+  data required time                                  4.96
+  -----------------------------------------------------------
+  data required time                                  4.96
+  data arrival time                                  -5.42
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.46
+
+
+1
+icc_shell> read_sdc  -version Latest "./MBF_APR.sdc"
+ Info: hierarchy_separator was changed to /
+
+Reading SDC version 2.0...
+Error: unknown command 'remove_from_collection' (CMD-005)
+Using operating conditions 'slow' found in library 'slow'.
+ Info: hierarchy_separator was changed to /
+1
+icc_shell> report_timing
+Information: Updating design information... (UID-85)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Tue May  1 23:14:44 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.58%
+
+  Startpoint: rom1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG30_S15
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.28       0.28
+  rom1/CLK (rom_1024x4_t13)                0.00       0.28 r
+  rom1/Q[3] (rom_1024x4_t13)               2.29       2.57 f
+  U1021/Y (NAND2X6)                        0.23 @     2.80 r
+  U36/Y (CLKBUFX3)                         0.50 @     3.30 r
+  U37/Y (CLKINVX1)                         0.55 &     3.85 f
+  add_134/IN0 (MBF_DW01_add_24)            0.00       3.85 f
+  add_134/U157/Y (NOR2XL)                  0.46 &     4.30 r
+  add_134/U183/Y (OAI21XL)                 0.20 &     4.51 f
+  add_134/U184/Y (OAI2BB1XL)               0.27 &     4.78 f
+  add_134/U168/Y (INVXL)                   0.15 &     4.93 r
+  add_134/U155/Y (OAI21XL)                 0.11 &     5.03 f
+  add_134/U187/Y (AO21X1)                  0.27 &     5.31 f
+  add_134/U195/Y (XNOR2X1)                 0.11 &     5.42 r
+  add_134/SUM[15] (MBF_DW01_add_24)        0.00       5.42 r
+  clk_r_REG30_S15/D (DFFTRX1)              0.00 &     5.42 r
+  data arrival time                                   5.42
+
+  clock clk (rise edge)                    5.50       5.50
+  clock network delay (propagated)         0.27       5.77
+  clock uncertainty                       -0.10       5.67
+  clk_r_REG30_S15/CK (DFFTRX1)             0.00       5.67 r
+  library setup time                      -0.21       5.46
+  data required time                                  5.46
+  -----------------------------------------------------------
+  data required time                                  5.46
+  data arrival time                                  -5.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1
+icc_shell> history
+     1  gui_start
+     2  open_mw_lib /home/yutongshen/IC_contest/ICContest100_final/icc/CHIP
+     3  ::iccGUI::open_mw_cel  route
+     4  open_mw_cel route
+     5  report_timing
+     6  read_sdc  -version Latest "./MBF_APR.sdc"
+     7  report_timing
+     8  report_timing
+     9  report_timing
+    10  write_verilog -wire_declaration -keep_backslash_before_hiersep -no_physical_only_cells MBF_pr.v
+    11  write_sdf -version 2.1 MBF_pr.sdf
+    12  write_stream -format gds -lib_name /home/yutongshen/IC_contest/ICContest100_final/icc/CHIP -cells {route } MBF.gds
+    13  ll
+    14  verify_lvs -ignore_floating_port
+    15  verify_zrt_route
+    16  get_attribute [get_die_area] bbox
+    17  read_sdc  -version Latest "./MBF_APR.sdc"
+    18  report_timing
+    19  read_sdc  -version Latest "./MBF_APR.sdc"
+    20  report_timing
+    21  history
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start RulerTool
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {12.555 144.510} -scale 0.0661
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc_shell> ::iccGUI::open_mw_cel  -readonly  rom_1024x4_t13.FRAM
+icc_shell> open_mw_cel -readonly rom_1024x4_t13.FRAM
+Preparing data for query................... 
+Warning: Unit conflict found: Milkyway technology file power unit is pW; main library power unit is mW. (IFS-007)
+Information: Opened "rom_1024x4_t13.FRAM;1" from "/home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13/rom_1024x4_t13" library. (MWUI-068)
+icc_shell> 
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -start RulerTool
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -add_point {110.600 156.325} -scale 0.0294
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc_shell> gui_mouse_tool -window [gui_get_current_window -types Layout -mru] -reset
+icc_shell> change_working_design_stack {route.CEL;1}
+icc_shell> change_working_design_stack {rom_1024x4_t13.FRAM;1}
+icc_shell> change_working_design_stack {route.CEL;1}
+icc_shell> 
+Information: linking reference library : /usr/cad/lib/CBDK_IC_Contest_v2.1/Astro/tsmc13gfsg_fram. (PSYN-878)
+Information: linking reference library : /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13/rom_1024x4_t13. (PSYN-878)
+Information: Loading local_link_library attribute {slow.db, rom_1024x4_t13_slow_syn.db}. (MWDC-290)
+
+  Linking design 'MBF'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (24 designs)              route.CEL, etc
+  slow (library)              /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  rom_1024x4_t13 (library)    /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13/rom_1024x4_t13_slow_syn.db
+  dw_foundation.sldb (library)
+                              /home/nfs_cad/synopsys/icc/cur/libraries/syn/dw_foundation.sldb
+
+Information: The design has horizontal rows, and Y-symmetry has been used for sites. (MWDC-217)
+Floorplan loading succeeded.
+Information: Updating graph... (UID-83)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Error: Cannot open file ./pna_output/route.VDD.pw_hl.pna. (PNA-019)
+Error: Cannot load power network analysis results for net VDD. (PNA-017)
+Error: Fail to load display map data.
+ (PNA-099)
+Report display map data ...
+Error: Cannot open file ./pna_output/route.VDD.pw_hl.pna. (PNA-019)
+Error: Cannot load power network analysis results for net VDD. (PNA-017)
+Error: Fail to load display map data.
+ (PNA-099)
+Report display map data ...
+icc_shell> analyze_fp_rail  -nets {VDD VSS} -power_budget 1000
+Geometry mapping begins.
+Removing all the files with the prefix route in the directory ./pna_output
+Parasitics Operating Condition is max
+Using [3 x 3] Fat Wire Table for METAL1
+Using [3 x 3] Fat Wire Table for METAL2
+Using [3 x 3] Fat Wire Table for METAL3
+Using [3 x 3] Fat Wire Table for METAL4
+Using [3 x 3] Fat Wire Table for METAL5
+Using [3 x 3] Fat Wire Table for METAL6
+Using [3 x 3] Fat Wire Table for METAL7
+The command set_tlu_plus_files was not set
+Reading TLU+ files from db.
+TLU+ based extraction:
+Resistance based on max model.
+Using operating temperature of  25.00 degree Celsius.
+Getting the info of via resistance from TLU+ model
+lower mask id 0, upper mask id 1, via layer 30, resistivity 11.070000
+lower mask id 1, upper mask id 2, via layer 51, resistivity 0.680000
+lower mask id 2, upper mask id 3, via layer 52, resistivity 0.680000
+lower mask id 3, upper mask id 4, via layer 53, resistivity 0.680000
+lower mask id 4, upper mask id 5, via layer 54, resistivity 0.680000
+lower mask id 5, upper mask id 6, via layer 55, resistivity 0.680000
+lower mask id 6, upper mask id 7, via layer 56, resistivity 0.680000
+lower mask id 7, upper mask id 8, via layer 57, resistivity 0.420000
+Warning: No power/ground pads are specified and no virtual pads are defined. (PNA-138)
+Number of pad instances: 0
+Error: All the P/G pads do not have power ports, or all the power ports are not connected to power or ground net logically. (PNA-006)
+PNA failed.
+1
+icc_shell> synthesize_fp_rail  -nets {VDD VSS} -synthesize_power_plan -synthesize_power_pads -power_budget 1000 -use_strap_ends_as_pads
+Warning: Layer constraint is not set in top design. (PNA-101)
+Use the top two layers as default
+Warning: Ring constraint is not set in top design. (PNA-102)
+Use the top two layers as default
+Warning: Power/Ground pad constraint is not set in top design. (PNA-103)
+Use the default pad synthesis constraints
+
+Power Pad and Network Synthesis Begins ...
+Geometry mapping begins.
+Parasitics Operating Condition is max
+Using [3 x 3] Fat Wire Table for METAL1
+Using [3 x 3] Fat Wire Table for METAL2
+Using [3 x 3] Fat Wire Table for METAL3
+Using [3 x 3] Fat Wire Table for METAL4
+Using [3 x 3] Fat Wire Table for METAL5
+Using [3 x 3] Fat Wire Table for METAL6
+Using [3 x 3] Fat Wire Table for METAL7
+The command set_tlu_plus_files was not set
+Reading TLU+ files from db.
+TLU+ based extraction:
+Resistance based on max model.
+Using operating temperature of  25.00 degree Celsius.
+Getting the info of via resistance from TLU+ model
+lower mask id 0, upper mask id 1, via layer 30, resistivity 11.070000
+lower mask id 1, upper mask id 2, via layer 51, resistivity 0.680000
+lower mask id 2, upper mask id 3, via layer 52, resistivity 0.680000
+lower mask id 3, upper mask id 4, via layer 53, resistivity 0.680000
+lower mask id 4, upper mask id 5, via layer 54, resistivity 0.680000
+lower mask id 5, upper mask id 6, via layer 55, resistivity 0.680000
+lower mask id 6, upper mask id 7, via layer 56, resistivity 0.680000
+lower mask id 7, upper mask id 8, via layer 57, resistivity 0.420000
+Ignoring all CONN views
+Warning: No power/ground pads are specified and no virtual pads are defined. (PNA-138)
+Number of pad instances: 0
+Geometry mapping took     0.19 seconds
+
+Name of design : route
+Number of cell instances in the design : 6509
+Number of cell instance masters in the library : 182
+
+Processing power net VSS ...
+Number of power net wires : 138
+Number of vias : 1276
+Average power dissipation in route :  1000.00 mW
+Power supply voltage :     1.50 V
+
+Processing power net VDD ...
+Number of power net wires : 108
+Number of vias : 1258
+Average power dissipation in route :  1000.00 mW
+Power supply voltage :     1.50 V
+The estimated number of p/g pads for PNS is 40.
+Initialization completed.
+
+Geometry mapping begins.
+Removing all the files with the prefix route in the directory ./pna_output
+Parasitics Operating Condition is max
+Using [3 x 3] Fat Wire Table for METAL1
+Using [3 x 3] Fat Wire Table for METAL2
+Using [3 x 3] Fat Wire Table for METAL3
+Using [3 x 3] Fat Wire Table for METAL4
+Using [3 x 3] Fat Wire Table for METAL5
+Using [3 x 3] Fat Wire Table for METAL6
+Using [3 x 3] Fat Wire Table for METAL7
+The command set_tlu_plus_files was not set
+Reading TLU+ files from db.
+TLU+ based extraction:
+Resistance based on max model.
+Using operating temperature of  25.00 degree Celsius.
+Getting the info of via resistance from TLU+ model
+lower mask id 0, upper mask id 1, via layer 30, resistivity 11.070000
+lower mask id 1, upper mask id 2, via layer 51, resistivity 0.680000
+lower mask id 2, upper mask id 3, via layer 52, resistivity 0.680000
+lower mask id 3, upper mask id 4, via layer 53, resistivity 0.680000
+lower mask id 4, upper mask id 5, via layer 54, resistivity 0.680000
+lower mask id 5, upper mask id 6, via layer 55, resistivity 0.680000
+lower mask id 6, upper mask id 7, via layer 56, resistivity 0.680000
+lower mask id 7, upper mask id 8, via layer 57, resistivity 0.420000
+Ignoring all CONN views
+Number of pad instances: 0
+Geometry mapping took     0.17 seconds
+
+Name of design : route
+Number of cell instance masters in the library : 182
+Number of cell instances in the design : 6509
+Power Network Synthesis Begins ...
+Processing net VDD ...
+Average power dissipation in route :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in route :   666.67 mA
+25 percent of initial power plan synthesis is done.
+50 percent of initial power plan synthesis is done.
+75 percent of initial power plan synthesis is done.
+100 percent of initial power plan synthesis is done.
+Performing Wire Cutting and Resizing of net VDD for Honoring Blockage Constraints
+Processing 30x22 straps
+Number of power pads reaching to the power ports of the leaf cells or blocks: 123
+Total assigned virtual connection port current is 285.643267
+Total assigned connected port current is 381.235380
+Total assigned current is 666.878647
+Total floating virtual connection port current is 0.000000
+Total floating connected port current is 0.000000
+Simulation begin ...
+Virtual Pad at (83.700 330.340) layer METAL8 Supplies   16.88 mA Current (2.53%)
+Virtual Pad at (83.700 0.690) layer METAL8 Supplies   16.76 mA Current (2.51%)
+Virtual Pad at (163.700 330.340) layer METAL8 Supplies   15.77 mA Current (2.37%)
+Virtual Pad at (16.700 330.340) layer METAL8 Supplies   15.68 mA Current (2.35%)
+Virtual Pad at (163.700 0.690) layer METAL8 Supplies   14.97 mA Current (2.25%)
+Virtual Pad at (96.700 330.340) layer METAL8 Supplies   14.66 mA Current (2.20%)
+Virtual Pad at (96.700 0.690) layer METAL8 Supplies   14.61 mA Current (2.19%)
+Virtual Pad at (177.700 330.340) layer METAL8 Supplies   12.37 mA Current (1.85%)
+Virtual Pad at (150.700 330.340) layer METAL8 Supplies   12.11 mA Current (1.82%)
+Virtual Pad at (177.700 0.690) layer METAL8 Supplies   11.88 mA Current (1.78%)
+Virtual Pad at (150.700 0.690) layer METAL8 Supplies   11.69 mA Current (1.75%)
+Virtual Pad at (190.700 330.340) layer METAL8 Supplies   10.80 mA Current (1.62%)
+Virtual Pad at (190.700 0.690) layer METAL8 Supplies   10.67 mA Current (1.60%)
+Virtual Pad at (203.700 330.340) layer METAL8 Supplies    9.96 mA Current (1.49%)
+Virtual Pad at (203.700 0.690) layer METAL8 Supplies    9.89 mA Current (1.48%)
+Virtual Pad at (69.700 330.340) layer METAL8 Supplies    9.61 mA Current (1.44%)
+Virtual Pad at (110.700 330.340) layer METAL8 Supplies    9.57 mA Current (1.44%)
+Virtual Pad at (110.700 0.690) layer METAL8 Supplies    9.38 mA Current (1.41%)
+Virtual Pad at (217.700 330.340) layer METAL8 Supplies    9.25 mA Current (1.39%)
+Virtual Pad at (217.700 0.690) layer METAL8 Supplies    9.25 mA Current (1.39%)
+Virtual Pad at (136.700 330.340) layer METAL8 Supplies    9.15 mA Current (1.37%)
+Virtual Pad at (0.690 159.885) layer METAL7 Supplies    9.12 mA Current (1.37%)
+Virtual Pad at (69.700 0.690) layer METAL8 Supplies    8.92 mA Current (1.34%)
+Virtual Pad at (136.700 0.690) layer METAL8 Supplies    8.89 mA Current (1.33%)
+Virtual Pad at (230.700 330.340) layer METAL8 Supplies    8.85 mA Current (1.33%)
+Virtual Pad at (230.700 0.690) layer METAL8 Supplies    8.85 mA Current (1.33%)
+Virtual Pad at (123.700 330.340) layer METAL8 Supplies    8.72 mA Current (1.31%)
+Virtual Pad at (123.700 0.690) layer METAL8 Supplies    8.48 mA Current (1.27%)
+Virtual Pad at (0.690 149.225) layer METAL7 Supplies    8.24 mA Current (1.24%)
+Virtual Pad at (244.700 330.340) layer METAL8 Supplies    8.14 mA Current (1.22%)
+Virtual Pad at (29.700 330.340) layer METAL8 Supplies    8.08 mA Current (1.21%)
+Virtual Pad at (244.700 0.690) layer METAL8 Supplies    7.97 mA Current (1.20%)
+Virtual Pad at (257.700 330.340) layer METAL8 Supplies    7.23 mA Current (1.08%)
+Virtual Pad at (257.700 0.690) layer METAL8 Supplies    6.72 mA Current (1.01%)
+Virtual Pad at (0.690 138.975) layer METAL7 Supplies    6.68 mA Current (1.00%)
+Virtual Pad at (0.690 318.145) layer METAL7 Supplies    6.63 mA Current (0.99%)
+Virtual Pad at (314.750 138.975) layer METAL7 Supplies    6.43 mA Current (0.96%)
+Virtual Pad at (314.750 149.225) layer METAL7 Supplies    6.32 mA Current (0.95%)
+Virtual Pad at (56.700 330.340) layer METAL8 Supplies    6.30 mA Current (0.95%)
+Virtual Pad at (314.750 191.455) layer METAL7 Supplies    6.29 mA Current (0.94%)
+Virtual Pad at (42.700 330.340) layer METAL8 Supplies    6.22 mA Current (0.93%)
+Virtual Pad at (271.700 330.340) layer METAL8 Supplies    6.20 mA Current (0.93%)
+Virtual Pad at (314.750 202.115) layer METAL7 Supplies    6.19 mA Current (0.93%)
+Virtual Pad at (314.750 181.205) layer METAL7 Supplies    6.13 mA Current (0.92%)
+Virtual Pad at (314.750 128.315) layer METAL7 Supplies    6.10 mA Current (0.91%)
+Virtual Pad at (314.750 159.885) layer METAL7 Supplies    5.80 mA Current (0.87%)
+Virtual Pad at (314.750 212.775) layer METAL7 Supplies    5.66 mA Current (0.85%)
+Virtual Pad at (314.750 96.745) layer METAL7 Supplies    5.58 mA Current (0.84%)
+Virtual Pad at (314.750 86.085) layer METAL7 Supplies    5.58 mA Current (0.84%)
+Virtual Pad at (0.690 181.205) layer METAL7 Supplies    5.52 mA Current (0.83%)
+Virtual Pad at (314.750 244.345) layer METAL7 Supplies    5.20 mA Current (0.78%)
+Virtual Pad at (314.750 233.685) layer METAL7 Supplies    5.15 mA Current (0.77%)
+Virtual Pad at (284.700 330.340) layer METAL8 Supplies    5.10 mA Current (0.76%)
+Virtual Pad at (0.690 128.315) layer METAL7 Supplies    5.10 mA Current (0.76%)
+Virtual Pad at (56.700 0.690) layer METAL8 Supplies    5.04 mA Current (0.76%)
+Virtual Pad at (314.750 107.405) layer METAL7 Supplies    5.02 mA Current (0.75%)
+Virtual Pad at (271.700 0.690) layer METAL8 Supplies    4.99 mA Current (0.75%)
+Virtual Pad at (314.750 75.425) layer METAL7 Supplies    4.97 mA Current (0.75%)
+Virtual Pad at (314.750 254.595) layer METAL7 Supplies    4.97 mA Current (0.74%)
+Virtual Pad at (0.000 168.660) layer METAL7 Supplies    4.91 mA Current (0.74%)
+Virtual Pad at (0.690 307.485) layer METAL7 Supplies    4.89 mA Current (0.73%)
+Virtual Pad at (314.750 117.655) layer METAL7 Supplies    4.81 mA Current (0.72%)
+Virtual Pad at (0.690 191.455) layer METAL7 Supplies    4.79 mA Current (0.72%)
+Virtual Pad at (284.700 0.690) layer METAL8 Supplies    4.63 mA Current (0.69%)
+Virtual Pad at (315.440 168.660) layer METAL7 Supplies    4.53 mA Current (0.68%)
+Virtual Pad at (314.750 265.255) layer METAL7 Supplies    4.41 mA Current (0.66%)
+Virtual Pad at (314.750 170.545) layer METAL7 Supplies    4.35 mA Current (0.65%)
+Virtual Pad at (315.440 223.830) layer METAL7 Supplies    4.31 mA Current (0.65%)
+Virtual Pad at (314.750 65.175) layer METAL7 Supplies    4.02 mA Current (0.60%)
+Virtual Pad at (315.440 113.490) layer METAL7 Supplies    3.97 mA Current (0.60%)
+Virtual Pad at (0.690 202.115) layer METAL7 Supplies    3.92 mA Current (0.59%)
+Virtual Pad at (297.700 330.340) layer METAL8 Supplies    3.85 mA Current (0.58%)
+Virtual Pad at (297.700 0.690) layer METAL8 Supplies    3.72 mA Current (0.56%)
+Virtual Pad at (0.690 296.825) layer METAL7 Supplies    3.63 mA Current (0.54%)
+Virtual Pad at (314.750 223.025) layer METAL7 Supplies    3.61 mA Current (0.54%)
+Virtual Pad at (42.700 0.690) layer METAL8 Supplies    3.55 mA Current (0.53%)
+Virtual Pad at (314.750 43.855) layer METAL7 Supplies    3.42 mA Current (0.51%)
+Virtual Pad at (0.690 117.655) layer METAL7 Supplies    3.29 mA Current (0.49%)
+Virtual Pad at (314.750 54.515) layer METAL7 Supplies    3.14 mA Current (0.47%)
+Virtual Pad at (0.690 212.775) layer METAL7 Supplies    3.11 mA Current (0.47%)
+Virtual Pad at (314.750 286.575) layer METAL7 Supplies    3.07 mA Current (0.46%)
+Virtual Pad at (314.750 275.915) layer METAL7 Supplies    3.05 mA Current (0.46%)
+Virtual Pad at (314.750 33.605) layer METAL7 Supplies    2.98 mA Current (0.45%)
+Virtual Pad at (314.750 296.825) layer METAL7 Supplies    2.94 mA Current (0.44%)
+Virtual Pad at (315.440 58.320) layer METAL7 Supplies    2.86 mA Current (0.43%)
+Virtual Pad at (0.690 107.405) layer METAL7 Supplies    2.69 mA Current (0.40%)
+Virtual Pad at (315.440 279.000) layer METAL7 Supplies    2.67 mA Current (0.40%)
+Virtual Pad at (0.690 286.575) layer METAL7 Supplies    2.64 mA Current (0.40%)
+Virtual Pad at (0.690 96.745) layer METAL7 Supplies    2.58 mA Current (0.39%)
+Virtual Pad at (29.700 0.690) layer METAL8 Supplies    2.56 mA Current (0.38%)
+Virtual Pad at (314.750 307.485) layer METAL7 Supplies    2.47 mA Current (0.37%)
+Virtual Pad at (0.000 113.490) layer METAL7 Supplies    2.39 mA Current (0.36%)
+Virtual Pad at (314.750 22.945) layer METAL7 Supplies    2.36 mA Current (0.35%)
+Virtual Pad at (0.690 244.345) layer METAL7 Supplies    2.30 mA Current (0.34%)
+Virtual Pad at (0.690 233.685) layer METAL7 Supplies    2.28 mA Current (0.34%)
+Virtual Pad at (0.690 254.595) layer METAL7 Supplies    2.27 mA Current (0.34%)
+Virtual Pad at (0.690 265.255) layer METAL7 Supplies    2.23 mA Current (0.33%)
+Virtual Pad at (0.690 86.085) layer METAL7 Supplies    2.22 mA Current (0.33%)
+Virtual Pad at (0.000 223.830) layer METAL7 Supplies    2.08 mA Current (0.31%)
+Virtual Pad at (16.700 0.690) layer METAL8 Supplies    2.05 mA Current (0.31%)
+Virtual Pad at (160.870 331.030) layer METAL8 Supplies    2.00 mA Current (0.30%)
+Virtual Pad at (314.750 318.145) layer METAL7 Supplies    2.00 mA Current (0.30%)
+Virtual Pad at (314.750 12.285) layer METAL7 Supplies    1.99 mA Current (0.30%)
+Virtual Pad at (0.690 275.915) layer METAL7 Supplies    1.88 mA Current (0.28%)
+Virtual Pad at (160.870 0.000) layer METAL8 Supplies    1.86 mA Current (0.28%)
+Virtual Pad at (0.690 223.025) layer METAL7 Supplies    1.80 mA Current (0.27%)
+Virtual Pad at (0.690 75.425) layer METAL7 Supplies    1.79 mA Current (0.27%)
+Virtual Pad at (0.000 279.000) layer METAL7 Supplies    1.76 mA Current (0.26%)
+Virtual Pad at (0.690 65.175) layer METAL7 Supplies    1.32 mA Current (0.20%)
+Virtual Pad at (0.690 43.855) layer METAL7 Supplies    1.02 mA Current (0.15%)
+Virtual Pad at (0.690 54.515) layer METAL7 Supplies    0.96 mA Current (0.14%)
+Virtual Pad at (0.690 33.605) layer METAL7 Supplies    0.93 mA Current (0.14%)
+Virtual Pad at (0.000 58.320) layer METAL7 Supplies    0.87 mA Current (0.13%)
+Virtual Pad at (0.690 12.285) layer METAL7 Supplies    0.85 mA Current (0.13%)
+Virtual Pad at (0.690 22.945) layer METAL7 Supplies    0.83 mA Current (0.12%)
+Virtual Pad at (55.720 331.030) layer METAL8 Supplies    0.59 mA Current (0.09%)
+Virtual Pad at (108.300 331.030) layer METAL8 Supplies    0.53 mA Current (0.08%)
+Virtual Pad at (108.300 0.000) layer METAL8 Supplies    0.52 mA Current (0.08%)
+Virtual Pad at (55.720 0.000) layer METAL8 Supplies    0.46 mA Current (0.07%)
+Virtual Pad at (213.440 331.030) layer METAL8 Supplies    0.34 mA Current (0.05%)
+Virtual Pad at (213.440 0.000) layer METAL8 Supplies    0.34 mA Current (0.05%)
+Virtual Pad at (266.010 331.030) layer METAL8 Supplies    0.21 mA Current (0.03%)
+Virtual Pad at (266.010 0.000) layer METAL8 Supplies    0.18 mA Current (0.03%)
+Total Current from Straps Ends:    0.00 mA (0.00%)
+Total Current from Virtual Pads:  666.88 mA (100.00%)
+Maximum IR drop in route : 38.79 mV
+Maximum current in route : 31.502 mA
+Maximum EM of wires in route : 1.045970e+03 A/cm, layer METAL7
+Maximum EM of vias in route : 3.698760e+06 A/cm_square, layer VIA34
+The PNS synthesizes the net VDD successfully
+The maximum IR drop of the synthesized net VDD is  38.793 mV
+Processing net VSS ...
+Average power dissipation in route :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in route :   666.67 mA
+Performing Wire Cutting of net VSS for Honoring Blockage Constraints
+Warning: A ring segment at (2.280 328.850 313.160 329.430) is possibly blocked by the nearby existing wire. (PNA-146)
+Warning: A ring segment at (2.280 1.600 313.160 2.180) is possibly blocked by the nearby existing wire. (PNA-146)
+Warning: A ring segment at (2.280 1.600 3.360 329.430) is possibly blocked by the nearby existing wire. (PNA-146)
+Warning: A ring segment at (312.080 1.600 313.160 329.430) is possibly blocked by the nearby existing wire. (PNA-146)
+Number of power pads reaching to the power ports of the leaf cells or blocks: 124
+Total assigned virtual connection port current is 285.431286
+Total assigned connected port current is 381.235380
+Total assigned current is 666.666667
+Total floating virtual connection port current is 0.000000
+Total floating connected port current is 0.000000
+Simulation begin ...
+Virtual Pad at (164.760 3.500) layer METAL8 Supplies   38.56 mA Current (5.78%)
+Virtual Pad at (164.760 327.530) layer METAL8 Supplies   32.52 mA Current (4.88%)
+Virtual Pad at (84.760 327.530) layer METAL8 Supplies   20.07 mA Current (3.01%)
+Virtual Pad at (17.760 327.530) layer METAL8 Supplies   16.89 mA Current (2.53%)
+Virtual Pad at (178.760 3.500) layer METAL8 Supplies   16.60 mA Current (2.49%)
+Virtual Pad at (151.760 3.500) layer METAL8 Supplies   16.51 mA Current (2.48%)
+Virtual Pad at (151.760 327.530) layer METAL8 Supplies   15.86 mA Current (2.38%)
+Virtual Pad at (97.760 327.530) layer METAL8 Supplies   14.03 mA Current (2.10%)
+Virtual Pad at (178.760 327.530) layer METAL8 Supplies   13.46 mA Current (2.02%)
+Virtual Pad at (191.760 3.500) layer METAL8 Supplies   12.47 mA Current (1.87%)
+Virtual Pad at (3.500 160.485) layer METAL7 Supplies   10.78 mA Current (1.62%)
+Virtual Pad at (204.760 3.500) layer METAL8 Supplies   10.69 mA Current (1.60%)
+Virtual Pad at (191.760 327.530) layer METAL8 Supplies   10.51 mA Current (1.58%)
+Virtual Pad at (137.760 3.500) layer METAL8 Supplies   10.05 mA Current (1.51%)
+Virtual Pad at (218.760 3.500) layer METAL8 Supplies   10.03 mA Current (1.50%)
+Virtual Pad at (137.760 327.530) layer METAL8 Supplies    9.62 mA Current (1.44%)
+Virtual Pad at (231.760 3.500) layer METAL8 Supplies    9.33 mA Current (1.40%)
+Virtual Pad at (204.760 327.530) layer METAL8 Supplies    9.32 mA Current (1.40%)
+Virtual Pad at (218.760 327.530) layer METAL8 Supplies    8.96 mA Current (1.34%)
+Virtual Pad at (70.760 327.530) layer METAL8 Supplies    8.64 mA Current (1.30%)
+Virtual Pad at (231.760 327.530) layer METAL8 Supplies    8.57 mA Current (1.29%)
+Virtual Pad at (245.760 3.500) layer METAL8 Supplies    8.30 mA Current (1.25%)
+Virtual Pad at (111.760 327.530) layer METAL8 Supplies    8.28 mA Current (1.24%)
+Virtual Pad at (245.760 327.530) layer METAL8 Supplies    7.89 mA Current (1.18%)
+Virtual Pad at (124.760 327.530) layer METAL8 Supplies    7.77 mA Current (1.17%)
+Virtual Pad at (3.500 149.825) layer METAL7 Supplies    7.73 mA Current (1.16%)
+Virtual Pad at (124.760 3.500) layer METAL8 Supplies    7.19 mA Current (1.08%)
+Virtual Pad at (30.760 327.530) layer METAL8 Supplies    7.17 mA Current (1.07%)
+Virtual Pad at (3.500 318.745) layer METAL7 Supplies    7.16 mA Current (1.07%)
+Virtual Pad at (258.760 327.530) layer METAL8 Supplies    6.90 mA Current (1.04%)
+Virtual Pad at (258.760 3.500) layer METAL8 Supplies    6.79 mA Current (1.02%)
+Virtual Pad at (311.940 139.575) layer METAL7 Supplies    6.16 mA Current (0.92%)
+Virtual Pad at (272.760 327.530) layer METAL8 Supplies    6.14 mA Current (0.92%)
+Virtual Pad at (3.500 171.145) layer METAL7 Supplies    6.11 mA Current (0.92%)
+Virtual Pad at (311.940 128.915) layer METAL7 Supplies    6.09 mA Current (0.91%)
+Virtual Pad at (311.940 149.825) layer METAL7 Supplies    6.03 mA Current (0.90%)
+Virtual Pad at (311.940 181.805) layer METAL7 Supplies    6.03 mA Current (0.90%)
+Virtual Pad at (311.940 192.055) layer METAL7 Supplies    6.01 mA Current (0.90%)
+Virtual Pad at (311.940 171.145) layer METAL7 Supplies    5.89 mA Current (0.88%)
+Virtual Pad at (311.940 118.255) layer METAL7 Supplies    5.80 mA Current (0.87%)
+Virtual Pad at (311.940 202.715) layer METAL7 Supplies    5.74 mA Current (0.86%)
+Virtual Pad at (311.940 160.485) layer METAL7 Supplies    5.49 mA Current (0.82%)
+Virtual Pad at (111.760 3.500) layer METAL8 Supplies    5.43 mA Current (0.81%)
+Virtual Pad at (3.500 139.575) layer METAL7 Supplies    5.41 mA Current (0.81%)
+Virtual Pad at (311.940 97.345) layer METAL7 Supplies    5.40 mA Current (0.81%)
+Virtual Pad at (311.940 86.685) layer METAL7 Supplies    5.28 mA Current (0.79%)
+Virtual Pad at (57.760 327.530) layer METAL8 Supplies    5.25 mA Current (0.79%)
+Virtual Pad at (311.940 213.375) layer METAL7 Supplies    5.16 mA Current (0.77%)
+Virtual Pad at (272.760 3.500) layer METAL8 Supplies    5.16 mA Current (0.77%)
+Virtual Pad at (311.940 108.005) layer METAL7 Supplies    5.13 mA Current (0.77%)
+Virtual Pad at (311.940 234.285) layer METAL7 Supplies    5.10 mA Current (0.77%)
+Virtual Pad at (285.760 327.530) layer METAL8 Supplies    5.09 mA Current (0.76%)
+Virtual Pad at (311.940 223.625) layer METAL7 Supplies    5.06 mA Current (0.76%)
+Virtual Pad at (311.940 76.025) layer METAL7 Supplies    4.98 mA Current (0.75%)
+Virtual Pad at (311.940 244.945) layer METAL7 Supplies    4.96 mA Current (0.74%)
+Virtual Pad at (285.760 3.500) layer METAL8 Supplies    4.79 mA Current (0.72%)
+Virtual Pad at (3.500 308.085) layer METAL7 Supplies    4.77 mA Current (0.72%)
+Virtual Pad at (43.760 327.530) layer METAL8 Supplies    4.76 mA Current (0.71%)
+Virtual Pad at (311.940 255.195) layer METAL7 Supplies    4.52 mA Current (0.68%)
+Virtual Pad at (3.500 181.805) layer METAL7 Supplies    4.44 mA Current (0.67%)
+Virtual Pad at (311.940 65.775) layer METAL7 Supplies    4.44 mA Current (0.67%)
+Virtual Pad at (154.560 0.000) layer METAL8 Supplies    4.28 mA Current (0.64%)
+Virtual Pad at (97.760 3.500) layer METAL8 Supplies    4.13 mA Current (0.62%)
+Virtual Pad at (311.940 265.855) layer METAL7 Supplies    3.94 mA Current (0.59%)
+Virtual Pad at (154.560 331.030) layer METAL8 Supplies    3.92 mA Current (0.59%)
+Virtual Pad at (298.760 327.530) layer METAL8 Supplies    3.86 mA Current (0.58%)
+Virtual Pad at (3.500 128.915) layer METAL7 Supplies    3.85 mA Current (0.58%)
+Virtual Pad at (298.760 3.500) layer METAL8 Supplies    3.83 mA Current (0.57%)
+Virtual Pad at (315.440 162.350) layer METAL7 Supplies    3.67 mA Current (0.55%)
+Virtual Pad at (311.940 55.115) layer METAL7 Supplies    3.63 mA Current (0.54%)
+Virtual Pad at (0.000 162.350) layer METAL7 Supplies    3.57 mA Current (0.54%)
+Virtual Pad at (84.760 3.500) layer METAL8 Supplies    3.40 mA Current (0.51%)
+Virtual Pad at (315.440 107.180) layer METAL7 Supplies    3.40 mA Current (0.51%)
+Virtual Pad at (311.940 276.515) layer METAL7 Supplies    3.35 mA Current (0.50%)
+Virtual Pad at (3.500 297.425) layer METAL7 Supplies    3.29 mA Current (0.49%)
+Virtual Pad at (315.440 217.530) layer METAL7 Supplies    3.29 mA Current (0.49%)
+Virtual Pad at (3.500 192.055) layer METAL7 Supplies    3.29 mA Current (0.49%)
+Virtual Pad at (311.940 44.455) layer METAL7 Supplies    3.16 mA Current (0.47%)
+Virtual Pad at (311.940 287.175) layer METAL7 Supplies    3.10 mA Current (0.47%)
+Virtual Pad at (3.500 118.255) layer METAL7 Supplies    2.79 mA Current (0.42%)
+Virtual Pad at (70.760 3.500) layer METAL8 Supplies    2.72 mA Current (0.41%)
+Virtual Pad at (311.940 34.205) layer METAL7 Supplies    2.69 mA Current (0.40%)
+Virtual Pad at (311.940 297.425) layer METAL7 Supplies    2.65 mA Current (0.40%)
+Virtual Pad at (3.500 202.715) layer METAL7 Supplies    2.50 mA Current (0.38%)
+Virtual Pad at (3.500 287.175) layer METAL7 Supplies    2.41 mA Current (0.36%)
+Virtual Pad at (315.440 272.700) layer METAL7 Supplies    2.28 mA Current (0.34%)
+Virtual Pad at (315.440 52.010) layer METAL7 Supplies    2.26 mA Current (0.34%)
+Virtual Pad at (57.760 3.500) layer METAL8 Supplies    2.16 mA Current (0.32%)
+Virtual Pad at (311.940 23.545) layer METAL7 Supplies    2.07 mA Current (0.31%)
+Virtual Pad at (311.940 308.085) layer METAL7 Supplies    2.01 mA Current (0.30%)
+Virtual Pad at (3.500 108.005) layer METAL7 Supplies    2.00 mA Current (0.30%)
+Virtual Pad at (3.500 213.375) layer METAL7 Supplies    1.94 mA Current (0.29%)
+Virtual Pad at (3.500 276.515) layer METAL7 Supplies    1.81 mA Current (0.27%)
+Virtual Pad at (3.500 223.625) layer METAL7 Supplies    1.67 mA Current (0.25%)
+Virtual Pad at (43.760 3.500) layer METAL8 Supplies    1.64 mA Current (0.25%)
+Virtual Pad at (3.500 97.345) layer METAL7 Supplies    1.63 mA Current (0.24%)
+Virtual Pad at (3.500 234.285) layer METAL7 Supplies    1.56 mA Current (0.23%)
+Virtual Pad at (3.500 265.855) layer METAL7 Supplies    1.56 mA Current (0.23%)
+Virtual Pad at (3.500 244.945) layer METAL7 Supplies    1.50 mA Current (0.23%)
+Virtual Pad at (3.500 255.195) layer METAL7 Supplies    1.50 mA Current (0.22%)
+Virtual Pad at (311.940 12.885) layer METAL7 Supplies    1.40 mA Current (0.21%)
+Virtual Pad at (3.500 86.685) layer METAL7 Supplies    1.34 mA Current (0.20%)
+Virtual Pad at (311.940 318.745) layer METAL7 Supplies    1.32 mA Current (0.20%)
+Virtual Pad at (30.760 3.500) layer METAL8 Supplies    1.30 mA Current (0.19%)
+Virtual Pad at (17.760 3.500) layer METAL8 Supplies    1.16 mA Current (0.17%)
+Virtual Pad at (3.500 76.025) layer METAL7 Supplies    1.09 mA Current (0.16%)
+Virtual Pad at (101.990 331.030) layer METAL8 Supplies    0.99 mA Current (0.15%)
+Virtual Pad at (207.130 0.000) layer METAL8 Supplies    0.96 mA Current (0.14%)
+Virtual Pad at (0.000 107.180) layer METAL7 Supplies    0.95 mA Current (0.14%)
+Virtual Pad at (3.500 65.775) layer METAL7 Supplies    0.88 mA Current (0.13%)
+Virtual Pad at (0.000 217.530) layer METAL7 Supplies    0.84 mA Current (0.13%)
+Virtual Pad at (207.130 331.030) layer METAL8 Supplies    0.84 mA Current (0.13%)
+Virtual Pad at (0.000 272.700) layer METAL7 Supplies    0.81 mA Current (0.12%)
+Virtual Pad at (3.500 55.115) layer METAL7 Supplies    0.68 mA Current (0.10%)
+Virtual Pad at (259.710 331.030) layer METAL8 Supplies    0.63 mA Current (0.10%)
+Virtual Pad at (259.710 0.000) layer METAL8 Supplies    0.62 mA Current (0.09%)
+Virtual Pad at (3.500 44.455) layer METAL7 Supplies    0.56 mA Current (0.08%)
+Virtual Pad at (49.410 331.030) layer METAL8 Supplies    0.49 mA Current (0.07%)
+Virtual Pad at (3.500 34.205) layer METAL7 Supplies    0.49 mA Current (0.07%)
+Virtual Pad at (3.500 23.545) layer METAL7 Supplies    0.44 mA Current (0.07%)
+Virtual Pad at (3.500 12.885) layer METAL7 Supplies    0.43 mA Current (0.06%)
+Virtual Pad at (101.990 0.000) layer METAL8 Supplies    0.38 mA Current (0.06%)
+Virtual Pad at (0.000 52.010) layer METAL7 Supplies    0.29 mA Current (0.04%)
+Virtual Pad at (49.410 0.000) layer METAL8 Supplies    0.15 mA Current (0.02%)
+Total Current from Straps Ends:    0.00 mA (0.00%)
+Total Current from Virtual Pads:  666.67 mA (100.00%)
+Maximum IR drop in route : 39.75 mV
+Maximum current in route : 41.470 mA
+Maximum EM of wires in route : 1.159970e+03 A/cm, layer METAL7
+Maximum EM of vias in route : 1.118718e+07 A/cm_square, layer VIA67
+The PPS synthesizes the net VSS successfully
+The maximum IR drop of the synthesized net VSS is  39.747
+
+The statistics of PNS results
+Global Constraints Setting
+Remove Floating Segments:       On
+Use Stack Via:                  On
+Same PG Width Sizing:           On
+Optimize Track Usage:           Off
+Keep Ring Outside Core Area:    Off
+No Straps Over Hard Macros:     Off
+No Straps Over Plan Groups:     Off
+No Straps Over Soft Macros:     Off
+Ignore Blockage:                Off
+Net name : VDD
+IR drop of the synthesized net :   38.79 mV
+Core ring segment: Horizontal: METAL7, Width: 0.580 microns
+Core ring segment: Vertical: METAL8, Width: 1.080 microns
+Layer: METAL8, Direction: Vertical, # of Straps: 22, PG spacing
+The maximum width of straps: 0.540 microns
+The average width of straps: 0.540 microns
+Layer: METAL7, Direction: Horizontal, # of Straps: 30, PG spacing
+The maximum width of straps: 0.290 microns
+The average width of straps: 0.290 microns
+The percentage of routing tracks used by the power net VDD for layer METAL8: 17.82%
+The percentage of routing tracks used by the power net VDD for layer METAL7: 14.43%
+The percentage of routing tracks used by the power net VDD for layer METAL6: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL5: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL4: 2.07%
+The percentage of routing tracks used by the power net VDD for layer METAL3: 1.38%
+The percentage of routing tracks used by the power net VDD for layer METAL2: 0.00%
+The percentage of routing tracks used by the power net VDD for layer METAL1: 5.76%
+The average percentage of routing tracks used by net VDD : 5.18%
+Net name : VSS
+IR drop of the synthesized net :   39.75 mV
+Core ring segment: Horizontal: METAL7, Width: 0.580 microns
+Core ring segment: Vertical: METAL8, Width: 1.080 microns
+Layer: METAL8, Direction: Vertical, # of Straps: 22, PG spacing
+The maximum width of straps: 0.540 microns
+The average width of straps: 0.540 microns
+Layer: METAL7, Direction: Horizontal, # of Straps: 30, PG spacing
+The maximum width of straps: 0.290 microns
+The average width of straps: 0.290 microns
+The percentage of routing tracks used by the power net VSS for layer METAL8: 17.30%
+The percentage of routing tracks used by the power net VSS for layer METAL7: 13.52%
+The percentage of routing tracks used by the power net VSS for layer METAL6: 0.01%
+The percentage of routing tracks used by the power net VSS for layer METAL5: 0.01%
+The percentage of routing tracks used by the power net VSS for layer METAL4: 1.97%
+The percentage of routing tracks used by the power net VSS for layer METAL3: 1.41%
+The percentage of routing tracks used by the power net VSS for layer METAL2: 0.00%
+The percentage of routing tracks used by the power net VSS for layer METAL1: 5.59%
+The average percentage of routing tracks used by net VSS : 4.98%
+Memory usage for design data :      40960.000 Kbytes
+Generating Power Routing Tcl commands file ./pna_output/create_pns_pg.tcl
+Overall takes     1.07 seconds
+Please read route.PNS.log for detail information
+Generating file ./pna_output/route.VDD.pad_summary to report power pad synthesis status.
+Generating file ./pna_output/route.VSS.pad_summary to report power pad synthesis status.
+
+Performing p/g pad synthesis ...
+0% . .  100% done.
+
+p/g pad synthesis result ...
+========================
+Net: VDD  [Maximum/Target IR drop(mV): 50.39/150.00]  [Number of synthesized pads:16]
+Net: VSS  [Maximum/Target IR drop(mV): 57.11/150.00]  [Number of synthesized pads:16]
+========================
+
+All pads are synthesized successfully.
+Saving the virtual pad file ./default.vpad successfully
+Memory usage for p/g pad synthesis only:         49.152 Kbytes
+Run time for p/g pad synthesis only:     0.44 seconds
+All the memory for p/g pad synthesis is removed.
+
+Power network synthesis is done successfully.
+Reading power network analysis highlight file: ./pna_output/route.VDD.pw_hl.pna ...
+Setting the IR threshold of drop ratio display to 0.100 mV
+Successfully create error file ./pna_output/VDD.VD.report
+Successfully loaded voltage drop map
+Report display map data ...
+Successfully created the VD report file icc_gui.output
+1
+icc_shell> report_clock_tree -summary
+  Loading design 'MBF'
+
+
+
+
+Information: Library Manufacturing Grid(GridResolution) : 5
+Information: Time Unit from Milkyway design library: 'ns' 
+Information: Design Library and main library timing units are matched - 1.000 ns. 
+Information: Resistance Unit from Milkyway design library: 'kohm' 
+Information: Design Library and main library resistance units are matched - 1.000 kohm. 
+Information: Capacitance Unit from Milkyway design library: 'pf' 
+Information: Design Library and main library capacitance units are matched - 1.000 pf. 
+Warning: Inconsistent library data found for layer POLY1. (RCEX-018)
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is detail route TLU+. (RCEX-015)
+Information: Start mixed mode parasitic extraction. (RCEX-023)
+Information: Start rc extraction...
+Warning: Net 'SNPS_LOGIC0' is not fully connected and will be estimated. (RCEX-060)
+Information: Parasitic source is LPE. (RCEX-040)
+Information: Parasitic mode is RealRC. (RCEX-041)
+Information: Using virtual shield extraction. (RCEX-081)
+Information: Extraction mode is MAX. (RCEX-042)
+Information: Extraction derate is 125/125/125. (RCEX-043)
+Information: Coupling capacitances are lumped to ground. (RCEX-044)
+Information: Start back annotation for parasitic extraction. (RCEX-023)
+Information: End back annotation for parasitic extraction. (RCEX-023)
+Information: Start timing update for parasitic extraction. (RCEX-023)
+Information: End timing update for parasitic extraction. (RCEX-023)
+Information: End parasitic extraction. (RCEX-023)
+Information: Start rc update...
+****************************************************************
+Information: TLUPlus based RC computation is enabled. (RCEX-141)
+****************************************************************
+Information: The distance unit in Capacitance and Resistance is 1 micron. (RCEX-007)
+Information: The RC model used is TLU+. (RCEX-015)
+Information: Library Derived Cap for layer METAL1 : 0.00022 0.00022 (RCEX-011)
+Information: Library Derived Res for layer METAL1 : 0.00065 0.00065 (RCEX-011)
+Information: Library Derived Cap for layer METAL2 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL2 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL3 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL3 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL4 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL4 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL5 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL5 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL6 : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Res for layer METAL6 : 0.00035 0.00035 (RCEX-011)
+Information: Library Derived Cap for layer METAL7 : 0.00029 0.00029 (RCEX-011)
+Information: Library Derived Res for layer METAL7 : 0.00038 0.00038 (RCEX-011)
+Information: Library Derived Cap for layer METAL8 : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Res for layer METAL8 : 6.7e-05 6.7e-05 (RCEX-011)
+Information: Library Derived Horizontal Cap : 0.00027 0.00027 (RCEX-011)
+Information: Library Derived Horizontal Res : 0.00044 0.00044 (RCEX-011)
+Information: Library Derived Vertical Cap : 0.00026 0.00026 (RCEX-011)
+Information: Library Derived Vertical Res : 0.00028 0.00028 (RCEX-011)
+Information: Using derived R and C coefficients. (RCEX-008)
+Information: Using region-based R and C coefficients. (RCEX-013)
+Information: Library Derived Via Res : 0.00078 0.00078 (RCEX-011)
+Information: End rc update.
+Information: Updating graph... (UID-83)
+Information: Input delay ('rise') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('fall') on clock port 'clk' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : clock tree
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Wed May  2 13:27:19 2018
+****************************************
+
+Information: Float pin scale factor for the 'max' operating condition of scenario 'default' is set to 1.000 (CTS-375)
+
+======================= Clock Tree Summary ========================
+Clock                Sinks     CTBuffers ClkCells  Skew      LongestPath TotalDRC   BufferArea
+-----------------------------------------------------------------------------------------------
+clk                  504       15        16        0.0279    0.2930      0            217.2672
+1
+icc_shell> report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBF
+Version: J-2014.09-SP1
+Date   : Wed May  2 13:28:03 2018
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: slow   Library: slow
+
+Information: Percent of Arnoldi-based delays =  6.58%
+
+  Startpoint: rom1 (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG30_S15
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.28       0.28
+  rom1/CLK (rom_1024x4_t13)                0.00       0.28 r
+  rom1/Q[3] (rom_1024x4_t13)               2.29       2.57 f
+  U1021/Y (NAND2X6)                        0.23 @     2.80 r
+  U36/Y (CLKBUFX3)                         0.50 @     3.30 r
+  U37/Y (CLKINVX1)                         0.55 &     3.85 f
+  add_134/IN0 (MBF_DW01_add_24)            0.00       3.85 f
+  add_134/U157/Y (NOR2XL)                  0.46 &     4.30 r
+  add_134/U183/Y (OAI21XL)                 0.20 &     4.51 f
+  add_134/U184/Y (OAI2BB1XL)               0.27 &     4.78 f
+  add_134/U168/Y (INVXL)                   0.15 &     4.93 r
+  add_134/U155/Y (OAI21XL)                 0.11 &     5.03 f
+  add_134/U187/Y (AO21X1)                  0.27 &     5.31 f
+  add_134/U195/Y (XNOR2X1)                 0.11 &     5.42 r
+  add_134/SUM[15] (MBF_DW01_add_24)        0.00       5.42 r
+  clk_r_REG30_S15/D (DFFTRX1)              0.00 &     5.42 r
+  data arrival time                                   5.42
+
+  clock clk (rise edge)                    5.50       5.50
+  clock network delay (propagated)         0.27       5.77
+  clock uncertainty                       -0.10       5.67
+  clk_r_REG30_S15/CK (DFFTRX1)             0.00       5.67 r
+  library setup time                      -0.21       5.46
+  data required time                                  5.46
+  -----------------------------------------------------------
+  data required time                                  5.46
+  data arrival time                                  -5.42
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+1
+icc_shell> 

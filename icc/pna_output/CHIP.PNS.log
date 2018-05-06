@@ -1,0 +1,38 @@
+
+Name of design : CHIP
+Number of cell instance masters in the library : 157
+Number of cell instances in the design : 3566
+Processing net VDD ...
+Average power dissipation in CHIP :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in CHIP :   666.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 515.93 mV
+Maximum current in CHIP : 346.269 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 515.93 mV
+Maximum current in CHIP : 346.269 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 515.93 mV
+Maximum current in CHIP : 346.269 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 515.93 mV
+Maximum current in CHIP : 346.269 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 515.93 mV
+Maximum current in CHIP : 346.269 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 515.93 mV
+Maximum current in CHIP : 346.269 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 515.93 mV
+Maximum current in CHIP : 346.269 mA
+Processing net VSS ...
+Average power dissipation in CHIP :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in CHIP :   666.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in CHIP : 567.81 mV
+Maximum current in CHIP : 339.828 mA
+Memory usage for design data :      37756.928 Kbytes
+Overall takes     0.65 seconds

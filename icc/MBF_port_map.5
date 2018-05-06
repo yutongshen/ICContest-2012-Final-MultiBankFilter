@@ -1,0 +1,23 @@
+set_user_match   -inverted   $svf_ref/MBF/add_108/IN0   $svf_impl/MBF/add_108/IN0
+set_user_match   -inverted   $svf_ref/MBF/add_104/B[14]   $svf_impl/MBF/add_104/B[14]
+set_user_match   -inverted   $svf_ref/MBF/add_130/B[14]   $svf_impl/MBF/add_130/B[14]
+set_user_match   -inverted   $svf_ref/MBF/add_107/B[11]   $svf_impl/MBF/add_107/B[11]
+set_user_match   -inverted   $svf_ref/MBF/sub_136/B[7]   $svf_impl/MBF/sub_136/B[7]
+set_user_match   -inverted   $svf_ref/MBF/sub_110/B[7]   $svf_impl/MBF/sub_110/B[7]
+set_user_match   -inverted   $svf_ref/MBF/add_134/B[9]   $svf_impl/MBF/add_134/B[9]
+set_user_match   -inverted   $svf_ref/MBF/add_97/B[15]   $svf_impl/MBF/add_97/B[15]
+set_user_match   -inverted   $svf_ref/MBF/add_101/IN0   $svf_impl/MBF/add_101/IN0
+set_user_match   -inverted   $svf_ref/MBF/add_97/B[13]   $svf_impl/MBF/add_97/B[13]
+set_user_match   -inverted   $svf_ref/MBF/add_108/IN1   $svf_impl/MBF/add_108/IN1
+set_user_match   -inverted   $svf_ref/MBF/add_134/IN0   $svf_impl/MBF/add_134/IN0
+set_user_match   -inverted   $svf_ref/MBF/add_131/B[13]   $svf_impl/MBF/add_131/B[13]
+set_user_match   -inverted   $svf_ref/MBF/add_124/B[11]   $svf_impl/MBF/add_124/B[11]
+set_user_match   -inverted   $svf_ref/MBF/add_98/B[11]   $svf_impl/MBF/add_98/B[11]
+set_user_match   -inverted   $svf_ref/MBF/add_125/B[12]   $svf_impl/MBF/add_125/B[12]
+guide_constraints -body { sub_123 } -equivalent { sub_123/B[10]    sub_123/IN0 }
+guide_constraints -body { sub_100 } -equivalent { sub_100/B[14]    sub_100/IN0 }
+guide_constraints -body { add_125 } -equivalent { add_125/B[12]  ~ add_125/IN0 }
+guide_constraints -body { add_134 } -equivalent { add_134/B[9]  ~ add_134/IN1 }
+
+#-------------------------------------------------------------------
+

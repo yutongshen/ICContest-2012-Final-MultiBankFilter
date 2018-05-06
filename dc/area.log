@@ -1,0 +1,25 @@
+ 
+****************************************
+Report : area
+Design : MBF
+Version: D-2010.03-SP5
+Date   : Tue May  1 16:50:46 2018
+****************************************
+
+Library(s) Used:
+
+    slow (File: /usr/cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+    rom_1024x4_t13 (File: /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13/rom_1024x4_t13_slow_syn.db)
+
+Number of ports:               20
+Number of nets:              1669
+Number of cells:             1234
+Number of references:         157
+
+Combinational area:       29336.164036
+Noncombinational area:    61662.589266
+Net Interconnect area:    369135.215393
+
+Total cell area:          90998.753302
+Total area:               460133.968695
+1

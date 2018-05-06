@@ -1,0 +1,38 @@
+
+Name of design : Before_PNS
+Number of cell instance masters in the library : 157
+Number of cell instances in the design : 3566
+Processing net VDD ...
+Average power dissipation in Before_PNS :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in Before_PNS :   666.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 259.00 mV
+Maximum current in Before_PNS : 245.064 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 259.00 mV
+Maximum current in Before_PNS : 245.064 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 259.00 mV
+Maximum current in Before_PNS : 245.064 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 259.00 mV
+Maximum current in Before_PNS : 245.064 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 259.00 mV
+Maximum current in Before_PNS : 245.064 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 259.00 mV
+Maximum current in Before_PNS : 245.064 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 259.00 mV
+Maximum current in Before_PNS : 245.064 mA
+Processing net VSS ...
+Average power dissipation in Before_PNS :  1000.00 mW
+Power supply voltage :     1.50 V
+Average current in Before_PNS :   666.67 mA
+Number of power pad nodes reaching to the power ports of the leaf cells or blocks : 4
+Maximum IR drop in Before_PNS : 247.54 mV
+Maximum current in Before_PNS : 207.682 mA
+Memory usage for design data :      38100.992 Kbytes
+Overall takes     0.73 seconds

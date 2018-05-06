@@ -1,0 +1,124 @@
+Initializing gui preferences from file  /home/yutongshen/.synopsys_icc_prefs.tcl
+icc_shell> gui_start
+Information: Visibility is turned ON for cells and cell contents because the task is set to Block Implementation (GUI-026)
+
+
+    while executing
+"parse_proc_arguments -args $args options"
+    (procedure "Misc::Setting::get" line 2)
+    invoked from within
+"::Misc::Setting::get -setting $setting -key caption -exists"
+    (procedure "Misc::init_window" line 5)
+    invoked from within
+"Misc::init_window settings $w"
+    (procedure "Misc::create_window" line 46)
+    invoked from within
+"Misc::create_window $type Settings"
+    (procedure "snpsTopLevel::create_window" line 9)
+    invoked from within
+"snpsTopLevel::create_window"
+    (procedure "iccGUI::gui_start_callback" line 18)
+    invoked from within
+"iccGUI::gui_start_callback 1"
+
+
+    while executing
+"hide_gui_cmds -cmds  { gui_set_window_pref_key
+          gui_get_window_pref_value
+          gui_add_menu
+          gui_add_hotkey_binding
+        }"
+    (procedure "snpsWndFramework::late_start_callback" line 5)
+    invoked from within
+"::snpsWndFramework::late_start_callback"
+icc_shell> source 01_import.tcl
+Error: Cannot read file '../src/MBF.v '. (UID-58)
+Error: Can't find design 'MBF'. (UID-109)
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+#You may modified the clock constraints 
+#or add more constraints for your design
+####################################################
+set cycle 5
+5
+create_clock -period $cycle [get_ports clk]
+Error: Current design is not defined. (UID-4)
+set_dont_touch_network      [get_clocks clk]
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '<object_list>' must have 1 elements. (CMD-036)
+0
+set_fix_hold clk
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '<clock_list>' must have 1 elements. (CMD-036)
+0
+####################################################
+#The following are design spec. for synthesis
+#You can NOT modify this seciton
+#####################################################
+set_clock_uncertainty  0.1  [all_clocks]
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+0
+set_clock_latency      0.5  [all_clocks]
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+0
+set_input_delay  1     -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+set_output_delay 1     -clock clk [all_outputs] 
+Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+0
+set_load         1     [all_outputs]
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'objects' must have 1 elements. (CMD-036)
+0
+set_drive        1     [all_inputs]
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+0
+set_operating_conditions -max_library slow -max slow
+Error: Current design is not defined. (UID-4)
+0
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+Error: Command 'set_wire_load_model' is disabled. (CMD-080)
+#####################################################
+icc_shell> sh ls -al
+total 2672
+drwxr-xr-x. 3 yutongshen users    4096 May  1 17:10 .
+drwxr-xr-x. 7 yutongshen users    4096 May  1 17:01 ..
+-rw-r--r--. 1 yutongshen users   12288 May  1 13:22 .01_import.tcl.swp
+-rw-r--r--. 1 yutongshen users   12288 May  1 15:05 .02_compile.tcl.swp
+-rw-r--r--. 1 yutongshen users   12288 May  1 16:30 .03_output.tcl.swp
+-rw-r--r--. 1 yutongshen users   12288 May  1 16:49 .DC_syn.tcl.swp
+-rw-r--r--. 1 yutongshen users   12288 May  1 16:47 .MBF_DC.sdc.swp
+-rw-r--r--. 1 yutongshen users   16384 May  1 16:24 .MBF_syn.v.swp
+-rwxr-xr-x. 1 yutongshen users    1015 May  1 12:59 .synopsys_dc.setup
+-rwxr-xr-x. 1 yutongshen users      70 May  1 12:48 00_run.tcl
+-rwxr-xr-x. 1 yutongshen users     156 May  1 13:22 01_import.tcl
+-rwxr-xr-x. 1 yutongshen users     241 May  1 15:05 02_compile.tcl
+-rwxr-xr-x. 1 yutongshen users     864 May  1 16:30 03_output.tcl
+-rwxr-xr-x. 1 yutongshen users     523 May  1 16:49 DC_syn.tcl
+-rw-r--r--. 1 yutongshen users  274944 May  1 16:44 MBF.ddc
+-rw-r--r--. 1 yutongshen users    1618 May  1 16:44 MBF.qor
+-rw-r--r--. 1 yutongshen users    2293 May  1 16:44 MBF.sdc
+-rw-r--r--. 1 yutongshen users   12288 May  1 16:49 MBF.svf
+-rwxr-xr-x. 1 yutongshen users     943 May  1 16:47 MBF_DC.sdc
+-rw-r--r--. 1 yutongshen users  266752 May  1 16:50 MBF_syn.ddc
+-rw-r--r--. 1 yutongshen users 1743989 May  1 16:50 MBF_syn.sdf
+-rw-r--r--. 1 yutongshen users  259745 May  1 16:50 MBF_syn.v
+drwxr-xr-x. 2 yutongshen users    4096 May  1 13:32 alib-52
+-rw-r--r--. 1 yutongshen users     718 May  1 16:50 area.log
+-rw-r--r--. 1 yutongshen users    3106 May  1 17:12 command.log
+-rw-r--r--. 1 yutongshen users   16264 May  1 17:10 filenames.log
+-rw-r--r--. 1 yutongshen users    1618 May  1 16:50 huffman_syn.qor
+-rw-r--r--. 1 yutongshen users    3584 May  1 17:12 icc_output.txt
+-rw-r--r--. 1 yutongshen users    1537 May  1 16:44 power.log
+-rw-r--r--. 1 yutongshen users    3130 May  1 16:50 timing.log
+icc_shell> exit

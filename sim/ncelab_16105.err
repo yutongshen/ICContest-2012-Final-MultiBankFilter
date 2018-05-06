@@ -1,0 +1,463 @@
+csi-ncelab - CSI: Command line:
+ncelab
+    -f /home/yutongshen/IC_contest/ICContest100_final/sim/INCA_libs/irun.lnx8664.14.10.nc/ncelab.args
+        +define+SDF+FSDB
+        +nc64bit
+        +access+r
+        -noshowtop
+        -ACCESS +r
+        -MESSAGES
+        -XLMODE ./INCA_libs/irun.lnx8664.14.10.nc
+        -RUNMODE
+        -CDSLIB ./INCA_libs/irun.lnx8664.14.10.nc/cds.lib
+        -HDLVAR ./INCA_libs/irun.lnx8664.14.10.nc/hdl.var
+        -WORK worklib
+        -HASXLMODE
+    -CHECK_VERSION TOOL:	ncverilog	14.10-s005
+    -LOG_FD 4
+
+csi-ncelab - CSI: *F,INTERR: INTERNAL EXCEPTION
+-----------------------------------------------------------------
+The tool has encountered an unexpected condition and must exit.
+Contact Cadence Design Systems customer support about this
+problem and provide enough information to help us reproduce it,
+including the logfile that contains this error message.
+  TOOL:	ncelab(64)	14.10-s005
+  HOSTNAME: ideal125
+  OPERATING SYSTEM: Linux 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64
+  MESSAGE: nettmp_replace - equivalent IDs (0) being requested.
+-----------------------------------------------------------------
+
+csi-ncelab - CSI: Cadence Support Investigation, recording details
+Intermediate File: root (IF_ROOT) in module tsmc13_neg.ADDHXL:v (VST)
+Verilog Syntax Tree: specify block declaration (VST_D_SPECIFY_BLOCK) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 13989, position 8
+	Scope: ADDHXL
+	Decompile: unable to decompile type 539
+	Source  :   specify
+	Position:         ^
+Verilog Syntax Tree: always statement declaration (VST_D_ALWAYS_STMT) in module worklib.rom_1024x4_t13:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13_sim1.v, line 283, position 8
+	Scope: rom_1024x4_t13
+	Source  :    always @( _CLK )
+	Position:         ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.INVX12:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 498, position 6
+	Scope: INVX12
+	Decompile: logic A
+	Source  : input A;
+	Position:       ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.test:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/testfixture1.v, line 8, position 10
+	Scope: test
+	Decompile: test#(N_EXP)
+	Source  : module test;
+	Position:           ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module worklib.test:v (SIG) <0x48fb7c0b>
+	Decompile: test#(N_EXP)
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module tsmc13_neg.DFFNSRX2:v (SIG) <0x0532a6ad>
+	Decompile: DFFNSRX2
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.DFFNSRX2:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 19288, position 16
+	Scope: DFFNSRX2
+	Decompile: logic SN
+	Source  : input  D, CKN, SN, RN;
+	Position:                 ^
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in module worklib.test:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/testfixture1.v, line 25, position 10
+	Scope: test
+	Decompile: MBF
+	Source  :    MBF  MBF(.clk(clk), .reset(reset), .y_valid(y_valid), .z_valid(z_valid), .y(y), .z(z));
+	Position:           ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.MBF:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 2965, position 9
+	Scope: MBF
+	Decompile: MBF
+	Source  : module MBF ( clk, reset, y_valid, z_valid, y, z );
+	Position:          ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module worklib.MBF:v (SIG) <0x426eba61>
+	Decompile: MBF
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in module worklib.MBF:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 5164, position 14
+	Scope: MBF
+	Decompile: U911
+	Source  :   CLKBUFX3 U911 ( .A(n1462), .Y(n1442) );
+	Position:               ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12177, position 14
+	Scope: CLKBUFX3
+	Decompile: CLKBUFX3
+	Source  : module CLKBUFX3 (Y, A);
+	Position:               ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module tsmc13_neg.CLKBUFX3:v (SIG) <0x6d5985f8>
+	Decompile: CLKBUFX3
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module tsmc13_neg.INVX12:v (SIG) <0x41b1c149>
+	Decompile: INVX12
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12181, position 7
+	Scope: CLKBUFX3
+	Decompile: I0
+	Source  :   buf I0(Y, A);
+	Position:        ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12181, position 12
+	Scope: CLKBUFX3
+	Decompile: A
+	Source  :   buf I0(Y, A);
+	Position:             ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.MBF_DW01_sub_21:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 1640, position 22
+	Scope: MBF_DW01_sub_21
+	Decompile: n97
+	Source  :   NAND2X2 U193 ( .A(n97), .B(A[7]), .Y(n60) );
+	Position:                       ^
+Verilog Syntax Tree: bit select expression (VST_E_BIT_SELECT) in module worklib.MBF_DW01_sub_21:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 1639, position 29
+	Scope: MBF_DW01_sub_21
+	Decompile: A[9]
+	Source  :   NAND2X4 U192 ( .A(n95), .B(A[9]), .Y(n52) );
+	Position:                              ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12181, position 9
+	Scope: CLKBUFX3
+	Decompile: Y
+	Source  :   buf I0(Y, A);
+	Position:          ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module tsmc13_neg.DFFTRX1:v (SIG) <0x3bc2f94b>
+	Decompile: DFFTRX1
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.MBF:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 3191, position 69
+	Scope: MBF
+	Decompile: logic n1442
+	Source  :          n1434, n1435, n1436, n1437, n1438, n1439, n1440, n1441, n1442, n1443,
+	Position:                                                                      ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12178, position 7
+	Scope: CLKBUFX3
+	Decompile: logic Y
+	Source  : output Y;
+	Position:        ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module tsmc13_neg.CLKBUFX3:v (VST)
+	Decompile: logic
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12179, position 6
+	Scope: CLKBUFX3
+	Decompile: logic A
+	Source  : input A;
+	Position:       ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module tsmc13_neg.DFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 19531, position 21
+	Scope: DFFTRX1
+	Decompile: dD
+	Source  :   udp_edfft I0 (n0, dD, clk, dRN, dSN, dEN, NOTIFIER);
+	Position:                      ^
+Verilog Syntax Tree: udp declaration (VST_D_UDP) in udp tsmc13_neg.udp_edfft:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 28606, position 18
+	Scope: udp_edfft
+	Decompile: unable to decompile type 515
+	Source  : primitive udp_edfft (out, in, clk, clr_, set_, en, NOTIFIER);
+	Position:                   ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module tsmc13_neg.DFFTRX1:v (SIG) <0x55cbf56e>
+	Decompile: DFFTRX1
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.DFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 19526, position 6
+	Scope: DFFTRX1
+	Decompile: logic dD
+	Source  : wire dD;
+	Position:       ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module tsmc13_neg.DFFTRX1:v (VST)
+	Decompile: logic
+Verilog Syntax Tree: logical equality expression (VST_E_LOGICAL_EQUALITY) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 14006, position 12
+	Decompile: (A == 1'b1)
+	Source  :      if (A == 1'b1)
+	Position:             ^
+Verilog Syntax Tree: logical equality expression (VST_E_LOGICAL_EQUALITY) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 14008, position 12
+	Decompile: (A == 1'b0)
+	Source  :      if (A == 1'b0)
+	Position:             ^
+Verilog Syntax Tree: logical equality expression (VST_E_LOGICAL_EQUALITY) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 14002, position 12
+	Decompile: (B == 1'b1)
+	Source  :      if (B == 1'b1)
+	Position:             ^
+Verilog Syntax Tree: logical equality expression (VST_E_LOGICAL_EQUALITY) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 14004, position 12
+	Decompile: (B == 1'b0)
+	Source  :      if (B == 1'b0)
+	Position:             ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module tsmc13_neg.DFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 19518, position 27
+	Scope: DFFTRX1
+	Decompile: CK
+	Source  : module DFFTRX1 (Q, QN, D, CK, RN);
+	Position:                            ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.DFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 19520, position 7
+	Scope: DFFTRX1
+	Decompile: logic D
+	Source  : input  D, CK, RN;
+	Position:        ^
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module tsmc13_neg.DFFTRX1:v (SIG) <0x3a80d52a>
+	Decompile: DFFTRX1
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module tsmc13_neg.EDFFTRX1:v (SIG) <0x5976e5b5>
+	Decompile: EDFFTRX1
+ot: s aca (OT_ACA_S) in module worklib.MBF:v (SIG) <0x426eba61>
+	Decompile: unable to decompile type 912
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.rom_1024x4_t13:v (VST)
+	Decompile: reg
+Verilog Syntax Tree: overlay table (VST_OVERLAY_TABLE) in module worklib.rom_1024x4_t13:v (SIG) <0x1deb04f9>
+	Decompile: rom_1024x4_t13#(BITS,word_depth,addr_width,wordx,addrx)
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.MBF:v (VST)
+	Scope: MBF
+	Decompile: logic
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.rom_1024x4_t13:v (VST)
+	Scope: rom_1024x4_t13.valid_address
+	Decompile: reg
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.MBF_DW01_sub_31:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 2851, position 66
+	Scope: MBF_DW01_sub_31
+	Decompile: logic n178
+	Source  :          n165, n166, n167, n168, n169, n170, n171, n172, n177, n178;
+	Position:                                                                   ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.MBF:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 3264, position 27
+	Scope: MBF
+	Decompile: logic add_140_carry
+	Source  :   wire   [7:1] add_140_carry;
+	Position:                            ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.MBF_DW01_sub_31:v (VST)
+	Decompile: logic
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.MBF_DW01_sub_31:v (VST)
+	Scope: MBF_DW01_sub_31
+	Decompile: logic
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module worklib.MBF_DW01_sub_31:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 2840, position 21
+	Scope: MBF_DW01_sub_31
+	Decompile: MBF_DW01_sub_31
+	Source  : module MBF_DW01_sub_31 ( A, DIFF, B_15_, B_13_, B_12_, B_11_, B_10_, B_9_, 
+	Position:                      ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.MBF_DW01_sub_31:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 2843, position 19
+	Scope: MBF_DW01_sub_31
+	Decompile: logic DIFF
+	Source  :   output [16:0] DIFF;
+	Position:                    ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.MBF:v (VST)
+	Decompile: logic
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 13985, position 9
+	Scope: ADDHXL
+	Decompile: logic B
+	Source  : input A, B;
+	Position:          ^
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.test:v (VST)
+	Scope: test
+	Decompile: reg
+Verilog Syntax Tree: register declaration (VST_D_REG) in module worklib.test:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/testfixture1.v, line 22, position 25
+	Scope: test
+	Decompile: reg over2
+	Source  : reg           over1, over2;
+	Position:                          ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module tsmc13_neg.EDFFTRX1:v (VST)
+	Decompile: reg
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module worklib.test:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/testfixture1.v, line 100, position 16
+	Scope: test
+	Decompile: pass2
+	Source  :             pass2 = pass2 + 1 ;
+	Position:                 ^
+Verilog Syntax Tree: always statement declaration (VST_D_ALWAYS_STMT) in module worklib.test:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/testfixture1.v, line 90, position 5
+	Scope: test
+	Source  : always @(posedge clk)begin
+	Position:      ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20033, position 14
+	Scope: EDFFTRX1
+	Decompile: EDFFTRX1
+	Source  : module EDFFTRX1 (Q, QN, D, CK, E, RN);
+	Position:               ^
+Verilog Syntax Tree: register declaration (VST_D_REG) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20036, position 11
+	Scope: EDFFTRX1
+	Decompile: reg NOTIFIER
+	Source  : reg NOTIFIER;
+	Position:            ^
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.rom_1024x4_t13:v (VST)
+	Scope: rom_1024x4_t13
+	Decompile: reg
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20046, position 13
+	Scope: EDFFTRX1
+	Decompile: I0
+	Source  :   udp_edfft I0 (n0, dD, dCK, dRN, dSN, E, NOTIFIER);
+	Position:              ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.rom_1024x4_t13:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13_sim1.v, line 105, position 16
+	Scope: rom_1024x4_t13
+	Decompile: logic _CEN
+	Source  :    wire			   _CEN;
+	Position:        			      ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.rom_1024x4_t13:v (VST)
+	Decompile: logic
+Intermediate File: root (IF_ROOT) in module worklib.rom_1024x4_t13:v (VST)
+Verilog Syntax Tree: root (VST_ROOT) in module worklib.rom_1024x4_t13:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13_sim1.v, line 57, position 5
+	Decompile: rom_1024x4_t13#(BITS,word_depth,addr_width,wordx,addrx)
+	Source  : module rom_1024x4_t13 (
+	Position:      ^
+Verilog Syntax Tree: parameter declaration (VST_D_PARAMETER) in module worklib.rom_1024x4_t13:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13_sim1.v, line 67, position 21
+	Scope: rom_1024x4_t13
+	Decompile: unspecified addrx
+	Source  :    parameter		   addrx = {addr_width{1'bx}};
+	Position:             		       ^
+Verilog Syntax Tree: number expression (VST_E_NUMBER) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 14004, position 14
+	Decompile: 1'b0
+	Source  :      if (B == 1'b0)
+	Position:               ^
+Verilog Syntax Tree: root (VST_ROOT) in module tsmc13_neg.ADDHXL:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 13983, position 5
+	Decompile: ADDHXL
+	Source  : module ADDHXL ( S, CO, A, B);
+	Position:      ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module worklib.rom_1024x4_t13:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13_sim1.v, line 72, position 15
+	Scope: rom_1024x4_t13
+	Decompile: logic A
+	Source  :    input [9:0] A;
+	Position:                ^
+Verilog Syntax Tree: unspecified type (VST_T_UNSPECIFIED) in module worklib.rom_1024x4_t13:v (VST)
+	Scope: rom_1024x4_t13
+	Decompile: unspecified
+Verilog Syntax Tree: root (VST_ROOT) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12177, position 5
+	Decompile: CLKBUFX3
+	Source  : module CLKBUFX3 (Y, A);
+	Position:      ^
+Verilog Syntax Tree: parameter declaration (VST_D_PARAMETER) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12186, position 13
+	Scope: CLKBUFX3
+	Decompile: unspecified tphl$A$Y
+	Source  :       tphl$A$Y = 1.0;
+	Position:              ^
+Verilog Syntax Tree: parameter declaration (VST_D_PARAMETER) in module worklib.rom_1024x4_t13:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/rom_1024x4_t13_sim1.v, line 65, position 26
+	Scope: rom_1024x4_t13
+	Decompile: unspecified addr_width
+	Source  :    parameter		   addr_width = 10;
+	Position:             		            ^
+Verilog Syntax Tree: real type (VST_T_REAL) in module tsmc13_neg.CLKBUFX3:v (VST)
+	Decompile: real
+Verilog Syntax Tree: indexed vector type (VST_T_INDEXED_VEC) in module worklib.rom_1024x4_t13:v (VST)
+	Decompile: logic signed
+Verilog Syntax Tree: real number expression (VST_E_REAL_NUMBER) in module tsmc13_neg.CLKBUFX3:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 12186, position 19
+	Decompile: 1.000000000000000
+	Source  :       tphl$A$Y = 1.0;
+	Position:                    ^
+Verilog Syntax Tree: unspecified type (VST_T_UNSPECIFIED) in module tsmc13_neg.CLKBUFX3:v (VST)
+	Scope: CLKBUFX3
+	Decompile: unspecified
+Verilog Syntax Tree: static range (VST_R_STATIC_RANGE) in module worklib.rom_1024x4_t13:v (VST)
+	Decompile: 31 to 0
+Verilog Syntax Tree: root overlay table (VST_OT_ROOT) in module worklib.test:v (SIG) <0x48fb7c0b>
+	Decompile: test#(N_EXP)
+Verilog Syntax Tree: root (VST_ROOT) in module worklib.test:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/testfixture1.v, line 8, position 5
+	Decompile: test#(N_EXP)
+	Source  : module test;
+	Position:      ^
+Intermediate File: string (IF_STRING) in module worklib.test:v (VST)
+	Decompile: worklib
+Verilog Syntax Tree: root overlay table (VST_OT_ROOT) in module tsmc13_neg.EDFFTRX1:v (SIG) <0x5976e5b5>
+	Decompile: EDFFTRX1
+Verilog Syntax Tree: root (VST_ROOT) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20033, position 5
+	Decompile: EDFFTRX1
+	Source  : module EDFFTRX1 (Q, QN, D, CK, E, RN);
+	Position:      ^
+Intermediate File: string (IF_STRING) in module tsmc13_neg.EDFFTRX1:v (VST)
+	Decompile: tsmc13_neg
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20033, position 35
+	Scope: EDFFTRX1
+	Decompile: RN
+	Source  : module EDFFTRX1 (Q, QN, D, CK, E, RN);
+	Position:                                    ^
+Verilog Syntax Tree: instance declaration (VST_D_INSTANCE) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20051, position 11
+	Scope: EDFFTRX1
+	Decompile: I5
+	Source  :   and     I5 (check,dE, dD);
+	Position:            ^
+Verilog Syntax Tree: wire declaration (VST_D_WIRE) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20051, position 18
+	Scope: EDFFTRX1
+	Decompile: logic check
+	Source  :   and     I5 (check,dE, dD);
+	Position:                   ^
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20051, position 25
+	Scope: EDFFTRX1
+	Decompile: dD
+	Source  :   and     I5 (check,dE, dD);
+	Position:                          ^
+ot: s aca (OT_ACA_S) in module tsmc13_neg.EDFFTRX1:v (SIG) <0x5976e5b5>
+	Decompile: unable to decompile type 912
+Verilog Syntax Tree: identifier expression (VST_E_IDENTIFIER) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20046, position 49
+	Scope: EDFFTRX1
+	Decompile: NOTIFIER
+	Source  :   udp_edfft I0 (n0, dD, dCK, dRN, dSN, E, NOTIFIER);
+	Position:                                                  ^
+Verilog Syntax Tree: logic type (VST_T_LOGIC) in module worklib.test:v (VST)
+	Decompile: reg
+Verilog Syntax Tree: hierarchical reference declaration (VST_D_OOMR) in module worklib.MBF:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 4304, position 11
+	Decompile: INVX12
+	Source  :   INVX12 U65 ( .A(n1357), .Y(n1359) );
+	Position:            ^
+Verilog Syntax Tree: root (VST_ROOT) in module worklib.MBF:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/dc/MBF_syn.v, line 2965, position 5
+	Decompile: MBF
+	Source  : module MBF ( clk, reset, y_valid, z_valid, y, z );
+	Position:      ^
+Intermediate File: string (IF_STRING) in module worklib.MBF:v (VST)
+	Decompile: U369
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module tsmc13_neg.INVX12:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 496, position 12
+	Scope: INVX12
+	Decompile: INVX12
+	Source  : module INVX12 (Y, A);
+	Position:             ^
+Verilog Syntax Tree: root (VST_ROOT) in module tsmc13_neg.AND2X4:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 1075, position 5
+	Decompile: AND2X4
+	Source  : module AND2X4 (Y, A, B);
+	Position:      ^
+Verilog Syntax Tree: module declaration (VST_D_MODULE) in module tsmc13_neg.AND2X4:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 1075, position 12
+	Scope: AND2X4
+	Decompile: AND2X4
+	Source  : module AND2X4 (Y, A, B);
+	Position:             ^
+Verilog Syntax Tree: register declaration (VST_D_REG) in module worklib.test:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/src/testfixture1.v, line 12, position 10
+	Scope: test
+	Decompile: reg reset
+	Source  : reg   reset ;
+	Position:           ^
+Intermediate File: root (IF_ROOT) in module tsmc13_neg.EDFFTRX1:v (VST)
+Verilog Syntax Tree: hierarchical reference declaration (VST_D_OOMR) in module tsmc13_neg.EDFFTRX1:v (VST)
+	File: /home/yutongshen/IC_contest/ICContest100_final/sim/tsmc13_neg.v, line 20046, position 13
+	Decompile: udp_edfft
+	Source  :   udp_edfft I0 (n0, dD, dCK, dRN, dSN, E, NOTIFIER);
+	Position:              ^
+Intermediate File: string (IF_STRING) in module tsmc13_neg.EDFFTRX1:v (VST)
+	Decompile: I0
+csi-ncelab - CSI: investigation output 1st 100 entries took 0.058 secs, send this file to Cadence Support
